@@ -2,15 +2,24 @@
 ![](https://i.imgur.com/IGBasHH.jpg)
 * [**拼圖趣 Puzzle (Figma)**](https://www.figma.com/file/JXRun3jOAaegpSetAD6LXG/%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=0%3A1&t=enPjie8gNRUiJj2t-1) 
 
-[123](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
+## Contents 
+- [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
+- [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
+- [SiteMap 網站地圖](https://github.com/susu3131/SideProject-puzzle#sitemap-%E7%B6%B2%E7%AB%99%E5%9C%B0%E5%9C%96)
+- [Mockup 設計稿](https://github.com/susu3131/SideProject-puzzle#mockup-%E8%A8%AD%E8%A8%88%E7%A8%BF)
+- [Contact 聯繫我](https://github.com/susu3131/SideProject-puzzle#contact)
 
-## 專題發想/緣由
+- [規劃進度](https://github.com/susu3131/SideProject-puzzle#%E8%A6%8F%E5%8A%83%E9%80%B2%E5%BA%A6)
+- [開發進度](https://github.com/susu3131/SideProject-puzzle#%E9%96%8B%E7%99%BC%E9%80%B2%E5%BA%A6)
+
+
+### 專題發想/緣由
 ![](https://i.imgur.com/oBqBLWM.png)
 
-## UserStory 使用者故事
+### UserStory 使用者故事
 ![](https://i.imgur.com/CVcaWIF.png)
 
-## SiteMap 網站地圖
+### SiteMap 網站地圖
 ![](https://i.imgur.com/Ta6boyv.png)
 
 ### Mockup 設計稿
@@ -19,23 +28,21 @@
 
 ![](https://i.imgur.com/vjO5mXY.png)
 
-### Contact
+#### Contact 聯繫我
 - Dc: 阿蘇#8531
 - Email : anny81327@gmail.com
 
 
-
-
 ---
 
-### 規劃進度
+#### 規劃進度
 - 3/1 ~ 3/8 專題發想、繪製線稿、設計稿  
 - 3/9 建立環境、規劃開發  
 - 3/10 ~ 3/11 切版header、footer 、登入、首頁
 - 3/12 開發登入功能、後台
 
 
-### 開發進度
+#### 開發進度
 
 - 建立環境
   - [x] 安裝Vue、Vite 
