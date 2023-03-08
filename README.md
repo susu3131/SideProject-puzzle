@@ -38,8 +38,8 @@
 ---
 
 ## 規劃進度
-- 3/1 ~ 3/8 專題發想、繪製線稿、設計稿  
-- 3/9 建立環境、規劃開發  
+- 3/1 ~ 3/7 專題發想、繪製線稿、設計稿  
+- 3/8~3/9 建立環境、規劃開發  
 - 3/10 ~ 3/11 切版header、footer 、登入、首頁
 - 3/12 開發登入功能、後台
 
@@ -49,7 +49,7 @@
 - 建立環境
   - [x] 安裝Vue、Vite 
   - [x] 建立base、deploy.sh上傳
-  - [ ] 安裝套件 (vueloading、tailwind、axios、vue-axios、 VeeValiadation)
+  - [x] 安裝套件 (vueloading、tailwind、axios、vue-axios、 VeeValiadation)
 
 -  路由表
   - [ ] 前台
