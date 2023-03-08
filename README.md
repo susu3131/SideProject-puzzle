@@ -2,13 +2,12 @@
 ![](https://i.imgur.com/IGBasHH.jpg)
 * [**拼圖趣 Puzzle (Figma)**](https://www.figma.com/file/JXRun3jOAaegpSetAD6LXG/%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=0%3A1&t=enPjie8gNRUiJj2t-1) 
 
-[1234](Contact)
 
 ## 專題發想/緣由
-![](https://i.imgur.com/oBqBLWM.png =461x497)
+![](https://i.imgur.com/oBqBLWM.png)
 
 ## UserStory 使用者故事
-![](https://i.imgur.com/CVcaWIF.png =459x486)
+![](https://i.imgur.com/CVcaWIF.png)
 
 ## SiteMap 網站地圖
 ![](https://i.imgur.com/Ta6boyv.png)
