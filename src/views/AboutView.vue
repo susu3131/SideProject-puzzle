@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about bg-slate-900">
+    <h1 class="b">This is an about pagedf</h1>
   </div>
 </template>
 
