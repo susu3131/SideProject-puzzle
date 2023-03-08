@@ -1,8 +1,6 @@
 # 拼圖趣 Puzzle 
 ![](https://i.imgur.com/IGBasHH.jpg)
-
-<font size=6>[**拼圖趣 Puzzle (Demo)**](https://susu3131.github.io/SideProject-puzzle/) </font>
-
+\
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
 - [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
