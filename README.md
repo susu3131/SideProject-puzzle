@@ -13,36 +13,36 @@
 - [開發進度](https://github.com/susu3131/SideProject-puzzle#%E9%96%8B%E7%99%BC%E9%80%B2%E5%BA%A6)
 
 
-### 專題發想/緣由
+## 專題發想/緣由
 ![](https://i.imgur.com/oBqBLWM.png)
 
-### UserStory 使用者故事
+## UserStory 使用者故事
 ![](https://i.imgur.com/CVcaWIF.png)
 
-### SiteMap 網站地圖
+## SiteMap 網站地圖
 ![](https://i.imgur.com/Ta6boyv.png)
 
-### Mockup 設計稿
+## Mockup 設計稿
 
 * [**拼圖趣 Puzzle (Figma Design)**](https://www.figma.com/file/ibABCHG8xRYJG2nSwiDFHT/Side-project---%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=13%3A5&t=nlbdlmY7icxDRlSs-1)  
 
 ![](https://i.imgur.com/vjO5mXY.png)
 
-#### Contact 聯繫我
+### Contact 聯繫我
 - Dc: 阿蘇#8531
 - Email : anny81327@gmail.com
 
 
 ---
 
-#### 規劃進度
+### 規劃進度
 - 3/1 ~ 3/8 專題發想、繪製線稿、設計稿  
 - 3/9 建立環境、規劃開發  
 - 3/10 ~ 3/11 切版header、footer 、登入、首頁
 - 3/12 開發登入功能、後台
 
 
-#### 開發進度
+### 開發進度
 
 - 建立環境
   - [x] 安裝Vue、Vite 
