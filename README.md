@@ -1,4 +1,32 @@
-# SideProject-puzzle
+# 拼圖趣 Puzzle 
+![](https://i.imgur.com/IGBasHH.jpg)
+* [**拼圖趣 Puzzle (Figma)**](https://www.figma.com/file/JXRun3jOAaegpSetAD6LXG/%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=0%3A1&t=enPjie8gNRUiJj2t-1) 
+
+[1234](Contact)
+
+## 專題發想/緣由
+![](https://i.imgur.com/oBqBLWM.png =461x497)
+
+## UserStory 使用者故事
+![](https://i.imgur.com/CVcaWIF.png =459x486)
+
+## SiteMap 網站地圖
+![](https://i.imgur.com/Ta6boyv.png)
+
+### Mockup 設計稿
+
+* [**拼圖趣 Puzzle (Figma Design)**](https://www.figma.com/file/ibABCHG8xRYJG2nSwiDFHT/Side-project---%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=13%3A5&t=nlbdlmY7icxDRlSs-1)  
+
+![](https://i.imgur.com/vjO5mXY.png)
+
+### Contact
+- Dc: 阿蘇#8531
+- Email : anny81327@gmail.com
+
+
+
+
+---
 
 ### 規劃進度
 - 3/1 ~ 3/8 專題發想、繪製線稿、設計稿  
