@@ -1,6 +1,9 @@
 # 拼圖趣 Puzzle 
 ![](https://i.imgur.com/IGBasHH.jpg)
-\
+
+## Demo
+[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/)
+ 
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
 - [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
@@ -10,10 +13,6 @@
 
 - [規劃進度](https://github.com/susu3131/SideProject-puzzle#%E8%A6%8F%E5%8A%83%E9%80%B2%E5%BA%A6)
 - [開發進度](https://github.com/susu3131/SideProject-puzzle#%E9%96%8B%E7%99%BC%E9%80%B2%E5%BA%A6)
-
-* [**拼圖趣 Puzzle (Figma)**](https://www.figma.com/file/JXRun3jOAaegpSetAD6LXG/%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=0%3A1&t=enPjie8gNRUiJj2t-1) 
-* [**拼圖趣 Puzzle (Figma Design)**](https://www.figma.com/file/ibABCHG8xRYJG2nSwiDFHT/Side-project---%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=13%3A5&t=nlbdlmY7icxDRlSs-1)  
-
 
 ## 專題發想/緣由
 ![](https://i.imgur.com/oBqBLWM.png)
@@ -25,7 +24,7 @@
 ![](https://i.imgur.com/Ta6boyv.png)
 
 ## Mockup 設計稿
-
+* [**拼圖趣 Puzzle (Figma)**](https://www.figma.com/file/JXRun3jOAaegpSetAD6LXG/%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=0%3A1&t=enPjie8gNRUiJj2t-1) 
 * [**拼圖趣 Puzzle (Figma Design)**](https://www.figma.com/file/ibABCHG8xRYJG2nSwiDFHT/Side-project---%E6%8B%BC%E5%9C%96%E8%B6%A3-Puzzle?node-id=13%3A5&t=nlbdlmY7icxDRlSs-1)  
 
 ![](https://i.imgur.com/vjO5mXY.png)
