@@ -9,7 +9,7 @@
 - [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
 - [SiteMap 網站地圖](https://github.com/susu3131/SideProject-puzzle#sitemap-%E7%B6%B2%E7%AB%99%E5%9C%B0%E5%9C%96)
 - [Mockup 設計稿](https://github.com/susu3131/SideProject-puzzle#mockup-%E8%A8%AD%E8%A8%88%E7%A8%BF)
-- [Contact 聯繫我](https://github.com/susu3131/SideProject-puzzle#contact)
+- [Contact 聯繫我](https://github.com/susu3131/SideProject-puzzle#contact-%E8%81%AF%E7%B9%AB%E6%88%91)
 
 - [規劃進度](https://github.com/susu3131/SideProject-puzzle#%E8%A6%8F%E5%8A%83%E9%80%B2%E5%BA%A6)
 - [開發進度](https://github.com/susu3131/SideProject-puzzle#%E9%96%8B%E7%99%BC%E9%80%B2%E5%BA%A6)
