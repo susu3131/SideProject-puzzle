@@ -12,7 +12,7 @@ import vueaxios from 'vue-axios'
 import { defineRule, configure } from 'vee-validate'
 import AllRules from '@vee-validate/rules';
 import { localize } from '@vee-validate/i18n'
-import zhtw from 'vee-validate/dist/locale/zh_tw.json'
+import zhtw from './zh_tw.json'
 
 configure({
   generateMessage: localize('zhtw'),
