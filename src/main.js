@@ -19,19 +19,23 @@ configure({
   validateOnInput: true // 調整為：輸入文字時，就立即進行驗證
 })
 
+//Font Awesome
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faregular} from '@fortawesome/free-regular-svg-icons'
+// import { fasolid } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// library.add(fasolid,faregular)
+
 
 import './assets/main.css'
 import './assets/tailwind.css'
 
-
-
 const app = createApp(App)
-
 
 app.use(vueaxios,axios)
 app.use(createPinia())
 app.use(router)
 
-
-
+//Font Awesome
+// app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
