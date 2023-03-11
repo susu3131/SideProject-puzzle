@@ -26,12 +26,12 @@
               <p>訂製拼圖</p>
             </div>
           </RouterLink>
-          <RouterLink to="/">
+          <button id="button" type="button">
             <div class="border-r border-black flex items-center pr-8 pl-8">
               <i class="fa-solid fa-user mr-4"></i>
               <p>會員登入</p>
             </div>
-          </RouterLink>
+          </button>
         </nav>
       </header>
 
@@ -65,39 +65,33 @@
         </div>
       </footer>
     </div>
+    <!-- 登入modal -->
+    <LoginItem />
   </div>
-
-  <!-- 登入moda -->
-
-
 </template>
 
 <script setup>
 import LoginItem from '.././components/LoginItem.vue'
 
+// 會員登入
+import { onMounted } from 'vue'
+import { Modal } from 'flowbite'
 
-//會員登入
-// import { onMounted } from 'vue'
-// import { Modal } from 'flowbite'
-// import LoginItemVue from '../components/LoginItem.vue'
+onMounted(() => {
+  const $buttonElement = document.querySelector('#button')
+  const $modalElement = document.querySelector('#modal')
+  const $closeButton = document.querySelector('#closeButton')
 
-// onMounted(() => {
-//   const $buttonElement = document.querySelector('#button')
-//   const $modalElement = document.querySelector('#modal')
-//   const $closeButton = document.querySelector('#closeButton')
+  const modalOptions = {
+    backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40'
+  }
 
-//   const modalOptions = {
-//     backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40'
-//   }
+  if ($modalElement) {
+    const modal = new Modal($modalElement, modalOptions)
+    $buttonElement.addEventListener('click', () => modal.toggle())
+    $closeButton.addEventListener('click', () => modal.hide())
 
-//   if ($modalElement) {
-//     const modal = new Modal($modalElement, modalOptions)
-//     $buttonElement.addEventListener('click', () => modal.toggle())
-//     $closeButton.addEventListener('click', () => modal.hide())
-
-//     // programmatically show
-//     // modal.show();
-//   }
-// })
+    // modal.show();
+  }
+})
 </script>
-
