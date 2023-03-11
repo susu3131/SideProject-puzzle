@@ -2,7 +2,7 @@
 ![](https://i.imgur.com/IGBasHH.jpg)
 
 ## Demo
-[SideProject - 拼圖趣 Puzzle Demo](http://127.0.0.1:5173/SideProject-puzzle/index)
+[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/index)
  
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
@@ -51,9 +51,18 @@
   - [x] 安裝套件 (vueloading、tailwind、axios、vue-axios、 VeeValiadation)
 
 -  路由表
-  - [ ] 前台
+  - [x] 前台
   - [ ] 後台
   - [ ] 產品
+
+-  切版
+  - [ ] 首頁
+  - [x] 會員登入  [ ]RWD
+  - [ ] 產品頁面
+  - [x] header  [ ]RWD
+  - [x] footer  [ ]RWD
+  - [ ] 後台中心  [ ]RWD
+  - [ ] 會員中心  [ ]RWD
 
 - 功能開發(前台)
   會員
