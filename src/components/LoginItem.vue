@@ -9,7 +9,7 @@
       <!-- Modal content -->
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 text-center">
         <button
-          id="closeButton"
+          id="close"
           type="button"
           class="absolute top-5 right-2.5 bg-transparent text-white hover:bg-white hover:text-primary rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
           data-modal-hide="authentication-modal"
@@ -40,29 +40,29 @@
                 >會員帳號</label
               >
               <input
-                type="email"
-                name="email"
-                id="email"
+                type="text"
+                name="text"
+                id="text"
                 class="w-3/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="請輸入您的會員帳號 "
                 required
               />
             </div>
             <div class="flex items-center justify-center">
-              <label for="number" class="block text-gray-900 dark:text-white mr-4 text-lg"
+              <label for="password" class="block text-gray-900 dark:text-white mr-4 text-lg"
                 >會員密碼</label
               >
               <input
-                type="email"
-                name="email"
-                id="email"
+                type="password"
+                name="password"
+                id="password"
                 class="w-3/5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                placeholder="請輸入您的會員帳號 "
+                placeholder="請輸入您的會員密碼 "
                 required
               />
             </div>
             
-            <button
+            <button @click="login" 
               type="submit"
               class=" px-20   ring-1 ring-primary  hover:bg-primary  hover:text-white   font-medium rounded-lg text-sm  py-2.5 text-center "
             >
@@ -82,5 +82,18 @@
 </template>
 
 <script>
-export default {}
+  
+
+  export default {
+    data() {
+      return {
+        
+      }
+    },
+    methods: {
+      login() {
+        this.$router.push({ path: '/admin'})
+      }
+    },
+  }
 </script>

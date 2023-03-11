@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-puzzle">
+  <div class="bg-puzzle bg-contain">
     <div class="flex flex-col justify-between">
       <!-- header -->
       <header>
         <div class="flex items-center justify-center">
           <img src=".././assets/image/logo.png" alt="logo" width="100" />
-          <p class="text-4xl font-bold text-primary">拼圖趣</p>
+          <p class="text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
         </div>
         <nav class="font-bold text-center text-lg flex justify-center mt-1">
           <RouterLink to="/index">
@@ -83,7 +83,7 @@ onMounted(() => {
   const $closeButton = document.querySelector('#closeButton')
 
   const modalOptions = {
-    backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40'
+    backdropClasses: 'bg-black bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40'
   }
 
   if ($modalElement) {
