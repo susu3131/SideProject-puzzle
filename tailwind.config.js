@@ -9,8 +9,10 @@ module.exports = {
         'secondary': '#95DACD', //綠
         'pink': '#FF8888', //粉
         'dark': '333333', //暗黑
-
       },
+      backgroundImage: {
+        'puzzle': "url('/src/assets/image/bg.jpg')",
+      }
     },
   },
   plugins: [],
