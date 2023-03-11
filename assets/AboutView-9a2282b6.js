@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as o,a as t}from"./index-0349ce6d.js";const c={},a={class:"about"},_=t("h1",{class:"b"},"測試頁面 ",-1),n=[_];function r(d,i){return s(),o("div",a,n)}const l=e(c,[["render",r]]);export{l as default};
