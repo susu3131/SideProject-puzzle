@@ -1,0 +1,1 @@
+import{_ as e,o,c as r}from"./index-358d58ca.js";const t={};function c(n,s,a,_,p,d){return o(),r("div",null," 訂製拼圖 ")}const i=e(t,[["render",c]]);export{i as default};
