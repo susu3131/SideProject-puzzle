@@ -1,12 +1,9 @@
 # 拼圖趣 Puzzle 
 ![](https://i.imgur.com/IGBasHH.jpg)
 
-<<<<<<< HEAD
-=======
 ## Demo
-[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/)
+[SideProject - 拼圖趣 Puzzle Demo](http://127.0.0.1:5173/SideProject-puzzle/index)
  
->>>>>>> f1e9dca36683c2124a494128d8a3cf7eef7b0641
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
 - [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
@@ -42,8 +39,8 @@
 ## 規劃進度
 - 3/1 ~ 3/7 專題發想、繪製線稿、設計稿  
 - 3/8~3/9 建立環境、規劃開發  
-- 3/10 ~ 3/11 切版header、footer 、登入、首頁
-- 3/12 開發登入功能、後台
+- 3/10 ~ 3/12 切版header、footer 、登入頁面
+- 3/13 開發登入功能、後台
 
 
 ## 開發進度
@@ -56,6 +53,7 @@
 -  路由表
   - [ ] 前台
   - [ ] 後台
+  - [ ] 產品
 
 - 功能開發(前台)
   會員
