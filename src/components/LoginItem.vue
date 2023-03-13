@@ -9,7 +9,7 @@
       <!-- Modal content -->
       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 text-center">
         <button
-          id="close"
+          id="closeButton"
           type="button"
           class="absolute top-5 right-2.5 bg-transparent text-white hover:bg-white hover:text-primary rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
           data-modal-hide="authentication-modal"
