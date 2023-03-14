@@ -20,7 +20,7 @@
               <p>精選商品</p>
             </div>
           </RouterLink>
-          <RouterLink to="/order">
+          <RouterLink to="/customize">
             <div class="border-r border-black flex items-center pr-8 pl-8">
               <i class="fa-solid fa-pen-to-square mr-4"></i>
               <p>訂製拼圖</p>

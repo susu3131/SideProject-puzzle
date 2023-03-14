@@ -17,9 +17,9 @@ const router = createRouter({
           component: () => import('.././views/IndexView.vue'),
         },
         {
-          path: '/order',
+          path: '/customize',
           name: '訂製拼圖',
-          component: () => import('.././views/OrderView.vue'),
+          component: () => import('.././views/CustomizeView.vue'),
         },
         {
           path: '/products',
@@ -31,7 +31,18 @@ const router = createRouter({
     {
       path: '/admin',
       name: '後臺中心',
-      component: () => import('.././views/AdminView.vue')
+      component: () => import('.././views/AdminView.vue'),
+      children: [{
+        path: '/order',
+        name: '訂單管理',
+        component: () => import('.././views/OrderView.vue'),
+      },
+      {
+        path: '/puzzle',
+        name: '拼圖管理',
+        component: () => import('.././views/PuzzleView.vue'),
+      }
+    ]
     },
     {
       path: '/:pathMatch(.*)*',

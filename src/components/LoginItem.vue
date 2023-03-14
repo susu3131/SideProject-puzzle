@@ -62,7 +62,7 @@
               />
             </div>
             
-            <button @click="login" 
+            <button @click.prevent="login" 
               type="submit"
               class=" px-20   ring-1 ring-primary  hover:bg-primary  hover:text-white   font-medium rounded-lg text-sm  py-2.5 text-center "
             >

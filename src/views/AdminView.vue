@@ -1,34 +1,44 @@
 <template>
-  <div class="bg-puzzle  bg-contain">
-    <!-- top header -->
-    <div class="flex py-3 items-center justify-center px-10">
-      <div class="flex items-center justify-center grow">
-        <img src=".././assets/image/logo.png" alt="logo" width="100" />
-        <h1 class="text-4xl font-extrabold text-primary">
-          拼圖趣 Puzzle <span class="text-2xl border border-primary px-3">後台中心</span>
+  <div class="bg-puzzle bg-contain">
+    <!--  header -->
+    <div class="flex sm:py-3 items-center justify-center p-5 sm:pt-10 sm:px-10">
+      <!-- tittle -->
+      <div class="flex items-center justify-center grow px-2  sm:mb-0">
+        <img class="lg:w-[100px]" src=".././assets/image/logo.png" alt="logo" width="80" />
+        <h1 class="text-2xl lg:text-4xl font-extrabold text-primary">
+          拼圖趣 Puzzle
+          <span class="block text-center text-xl sm:inline sm:text-2xl border border-primary px-3">後台中心</span>
         </h1>
       </div>
-      <div class="flex">
-        <div class="flex items-center justify-center mr-4">
+      <!-- 登出按鈕 -->
+      <div class="flex py-2 justify-center ml-3 sm:ml-0  lg:mt-5">
+        <div class="md:flex items-center justify-center mr-4  hidden ">
           <i class="fa-solid fa-circle-user"></i>
           <p class="ml-2">管理員 admin</p>
         </div>
-        <button
-          class="flex items-center justify-center bg-secondary text-white px-6 py-1 h-1/4 rounded-md"
-        >
-          <p class="mr-1">登出</p>
+        <button class="flex items-center justify-center border-dark border-[1px] hover:bg-primary hover:text-white px-3  sm:px-6 py-1 h-1/4 rounded-md">
+          <p class="mr-1 hidden sm:block text-base">登出</p>
           <i class="fa-solid fa-right-from-bracket ml-1"></i>
         </button>
       </div>
     </div>
 
     <!-- content -->
-    <div class=" h-screen bg-white opacity-80">
+    <div class="flex text-center  sm:p-0">
+      <router-link to="/order" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-bold border-2 border-secondary border-b-0">訂單管理</router-link>
+      <router-link to="/puzzle" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-bold border-2 border-l-0 border-secondary border-b-0">商品管理</router-link>
+    </div>
+    <!-- routeview -->
+    <div class="bg-white opacity-80 border-y-2 h-screen border-secondary">
+      <RouterView />
+    </div>
+    <!-- home  -->
+    <!-- <div class="bg-white opacity-80">
       <div class="text-blue-600 text-xl">
         <RouterLink to="/index">回到首頁</RouterLink>
         <RouterLink to="/g" class="ml-5">404 測試</RouterLink>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

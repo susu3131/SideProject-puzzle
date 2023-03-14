@@ -1,8 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="b">測試頁面
-      
-    </h1>
+    精選商品
   </div>
 </template>
 
