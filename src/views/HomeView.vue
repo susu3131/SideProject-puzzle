@@ -26,18 +26,26 @@
               <p>訂製拼圖</p>
             </div>
           </RouterLink>
-          <button id="button" type="button">
+          <!-- test -->
+          <!-- The button to open modal -->
+          <label for="my-modal" class="border-r border-black flex items-center pr-8 pl-8">
+            <i class="fa-solid fa-user mr-4"></i>
+            <p>會員登入</p>
+          </label>
+
+          <!-- <button id="button" type="button">
             <div class="border-r border-black flex items-center pr-8 pl-8">
               <i class="fa-solid fa-user mr-4"></i>
               <p>會員登入</p>
             </div>
-          </button>
+          </button> -->
         </nav>
       </header>
 
       <div class="h-[72vh]">
         <RouterView />
       </div>
+
       <!-- footer -->
       <footer class="text-center bg-primary text-white py-8">
         <div class="container mx-auto">
@@ -58,10 +66,7 @@
               </div>
             </div>
           </div>
-          <p class="font-normal">
-            此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights
-            reserved.
-          </p>
+          <p class="font-normal">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -72,26 +77,4 @@
 
 <script setup>
 import LoginItem from '.././components/LoginItem.vue'
-
-// 會員登入
-import { onMounted } from 'vue'
-import { Modal } from 'flowbite'
-
-onMounted(() => {
-  const $buttonElement = document.querySelector('#button')
-  const $modalElement = document.querySelector('#modal')
-  const $closeButton = document.querySelector('#closeButton')
-
-  const modalOptions = {
-    backdropClasses: 'bg-black bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40'
-  }
-
-  if ($modalElement) {
-    const modal = new Modal($modalElement, modalOptions)
-    $buttonElement.addEventListener('click', () => modal.toggle())
-    $closeButton.addEventListener('click', () => modal.hide())
-
-    // modal.show();
-  }
-})
 </script>
