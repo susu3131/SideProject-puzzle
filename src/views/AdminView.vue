@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-puzzle bg-contain">
+  <div class="bg-puzzle bg-contain  h-screen">
     <!--  header -->
     <div class="flex sm:py-3 items-center justify-center p-5 sm:pt-10 sm:px-10 lg:pb-0">
       <div class="lg:flex-1"></div>
@@ -26,20 +26,18 @@
 
     <!-- content -->
     <div class="flex text-center sm:p-0 font-bold">
-      <router-link to="/order" class=" sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black border-2 border-secondary border-b-0">訂單管理</router-link>
-      <router-link to="/puzzle" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black  border-2 border-l-0 border-secondary border-b-0">商品管理</router-link>
+      <router-link to="/order" class=" sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black border border-secondary border-b-0">訂單管理</router-link>
+      <router-link to="/puzzle" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black  border border-l-0 border-secondary border-b-0">商品管理</router-link>
     </div>
 
     <!-- routeview -->
-    <div class="bg-white opacity-80 border-y-2 h-screen border-secondary">
-      <!-- home  -->
-      <div class="bg-white opacity-80">
-        <div class="text-blue-600 text-xl">
-          <RouterLink to="/index">回到首頁</RouterLink>
-          <RouterLink to="/g" class="ml-5">404 測試</RouterLink>
-        </div>
-      </div>
+    <div class="bg-white opacity-80 border-y-2 border-secondary">
+
       <RouterView />
+    </div>
+    <!-- footer -->
+    <div class=" bg-secondary w-full">
+      <p>1</p>
     </div>
   </div>
 </template>
