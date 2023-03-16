@@ -21,6 +21,7 @@
     "daisyui": "^2.51.4",
     "flowbite": "^1.6.4",
     "pinia": "^2.0.32",
+    "sass": "^1.59.3",
     "vee-validate": "^4.7.4",
     "vue": "^3.2.47",
     "vue-axios": "^3.5.2",

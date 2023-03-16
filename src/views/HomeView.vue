@@ -3,32 +3,32 @@
     <div class="flex flex-col justify-between">
       <!-- header -->
       <header>
-        <div class="flex items-center justify-center">
-          <img src=".././assets/image/logo.png" alt="logo" width="100" />
-          <p class="text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
+        <div class="flex items-center justify-center pt-3">
+          <img src=".././assets/image/logo.png" alt="logo" class="w-20 md:w-24" />
+          <p class="text-3xl md:text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
         </div>
         <nav class="font-bold text-center text-lg flex justify-center mt-1">
           <RouterLink to="/index">
-            <div class="border-r border-black flex items-center pr-8 pl-8">
+            <div class="border-r border-black flex items-center pr-8 pl-8 hover:text-primary hover-button">
               <i class="fa-solid fa-house mr-4"></i>
               <p>首頁</p>
             </div>
           </RouterLink>
           <RouterLink to="/products">
-            <div class="border-r border-black flex items-center pr-8 pl-8">
+            <div class="border-r border-black flex items-center pr-8 pl-8 hover-button">
               <i class="fa-solid fa-puzzle-piece mr-4"></i>
               <p>精選商品</p>
             </div>
           </RouterLink>
           <RouterLink to="/customize">
-            <div class="border-r border-black flex items-center pr-8 pl-8">
+            <div class="border-r border-black flex items-center pr-8 pl-8 hover-button">
               <i class="fa-solid fa-pen-to-square mr-4"></i>
               <p>訂製拼圖</p>
             </div>
           </RouterLink>
           <!-- test -->
           <!-- The button to open modal -->
-          <label for="my-modal" class="border-r border-black flex items-center pr-8 pl-8">
+          <label for="my-modal" class="border-r border-black flex items-center pr-8 pl-8 hover-button">
             <i class="fa-solid fa-user mr-4"></i>
             <p>會員登入</p>
           </label>
@@ -78,3 +78,22 @@
 <script setup>
 import ModalItem from '.././components/ModalItem.vue'
 </script>
+
+<style lang="scss" scoped>
+// hover 偽元素
+.hover-button {
+  position: relative;
+  &::before {
+    content: '';
+    @apply bg-primary absolute -bottom-2 h-[2px] w-3/5 mx-auto;
+    transform: scale(0);
+  }
+  &:hover:before {
+    transition-duration: 0.3s;
+    transform: scale(1);
+  }
+  &:hover {
+    @apply text-primary;
+  }
+}
+</style>
