@@ -71,10 +71,10 @@
       </footer>
     </div>
     <!-- 登入modal -->
-    <LoginItem />
+    <ModalItem />
   </div>
 </template>
 
 <script setup>
-import LoginItem from '.././components/LoginItem.vue'
+import ModalItem from '.././components/ModalItem.vue'
 </script>
