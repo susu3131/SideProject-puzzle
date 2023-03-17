@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-puzzle bg-contain">
+  <div class="bg-puzzle bg-contain ">
     <div class="flex flex-col justify-between">
       <!-- header -->
       <header>

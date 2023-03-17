@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-puzzle bg-contain  h-screen">
+  <div class="bg-puzzle bg-contain flex flex-col h-screen ">
     <!--  header -->
     <div class="flex sm:py-3 items-center justify-center p-5 sm:pt-10 sm:px-10 lg:pb-0">
       <div class="lg:flex-1"></div>
@@ -26,18 +26,18 @@
 
     <!-- content -->
     <div class="flex text-center sm:p-0 font-bold">
-      <router-link to="/order" class=" sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black border border-secondary border-b-0">訂單管理</router-link>
-      <router-link to="/puzzle" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black  border border-l-0 border-secondary border-b-0">商品管理</router-link>
+      <router-link to="/order" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black border border-secondary border-b-0">訂單管理</router-link>
+      <router-link to="/puzzle" class="sm:py-3 sm:px-10 py-2 px-6 hover:bg-secondary hover:text-white hover:font-black border border-l-0 border-secondary border-b-0">商品管理</router-link>
     </div>
 
     <!-- routeview -->
-    <div class="bg-white opacity-80 border-y-2 border-secondary">
-
+    <div class="bg-white opacity-80 border-y-2 border-secondary flex-1">
       <RouterView />
     </div>
     <!-- footer -->
-    <div class=" bg-secondary w-full">
-      <p>1</p>
+    <div class="bg-secondary text-center text-white py-6">
+      <img src=".././assets/image/logo-white.svg" class="mx-auto" alt="logo" />
+      <p>此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
     </div>
   </div>
 </template>

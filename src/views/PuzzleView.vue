@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="p-3 lg:px-20  ">
     管理拼圖
   </div>
 </template>
