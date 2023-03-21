@@ -6,13 +6,13 @@
   body {
     font-family: 'Noto Serif TC', serif;
     font-weight: 500;
-    @apply text-dark;
+    
   }
   h1 {
     @apply text-[32px] font-semibold;
   }
   h2 {
-    @apply text-[28px] font-semibold;
+    @apply text-2xl md:text-[28px] font-semibold;
   }
   img,
   svg,
