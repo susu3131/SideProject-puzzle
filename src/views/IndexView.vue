@@ -20,6 +20,81 @@
         </div>
       </div>
     </div>
+    <!-- 本店服務 -->
+    <div class="container py-10">
+      <div class="flex justify-center relative mb-10">
+        <i class="fa-solid fa-ranking-star mr-3 text-[28px]"></i>
+        <h2>本店服務</h2>
+      </div>
+    </div>
+    <!-- 新品上市 -->
+    <div class="container py-10">
+      <div class="flex justify-center relative mb-10">
+        <i class="fa-solid fa-ranking-star mr-3 text-[28px]"></i>
+        <h2>新品上市</h2>
+        <div class="after:border-primary after:content-[''] after:w-1/6 after:absolute after:-translate-x-1/2 after:-bottom-4 after:left-1/2 after:border-b-[4px]"></div>
+      </div>
+    </div>
+    <!-- 熱銷排行 -->
+    <div class="container py-10">
+      <div class="flex justify-center relative mb-10">
+        <i class="fa-solid fa-ranking-star mr-3 text-[28px]"></i>
+        <h2>熱銷排行</h2>
+        <div class="after:border-primary after:content-[''] after:w-1/6 after:absolute after:-translate-x-1/2 after:-bottom-4 after:left-1/2 after:border-b-[4px]"></div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+
+        <!-- 1 -->
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+
+        <!-- 1 -->
+        <div>
+          <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
+          <div class="relative">
+            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -5,6 +5,21 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+    //覆蓋原樣式
+    container: {
+      center: true,
+      screens: {
+        xl: "1440px",
+      },
+      //修改padding 
+      padding: {
+        // DEFAULT: '1rem',
+        // sm: '2rem',
+        // lg: '4rem',
+        // xl: '5rem',
+        // '2xl': '6rem',
+      }
+    },
     extend: {
       //客製寫在這
       colors: {
