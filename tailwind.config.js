@@ -12,7 +12,8 @@ module.exports = {
         'secondary': '#82D0C1', //綠
         'pink': '#FF8888', //粉
         'dark': '#333333', //暗黑
-        'light': '#FFAA4D' //黃
+        'light': '#FFAA4D', //黃
+        'light-green': '#37CDBE' //亮綠
       },
       backgroundImage: {
         'puzzle': "url('/src/assets/image/bg.jpg')",

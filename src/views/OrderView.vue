@@ -45,10 +45,12 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
               </div>
             </td>
           </tr>
@@ -80,10 +82,12 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox"  class="checkbox checkbox-accent checkbox-md border-primary" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-primary text-white rounded-lg">訂單處理中</p>
               </div>
             </td>
           </tr>
@@ -115,10 +119,12 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
               </div>
             </td>
           </tr>
@@ -150,10 +156,12 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
               </div>
             </td>
           </tr>
@@ -185,10 +193,12 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
               </div>
             </td>
           </tr>
@@ -220,24 +230,102 @@
             </td>
             <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
               <div class="flex">
-                <div class="border">
-                  <i class="fa-solid fa-xmark px-3 py-2 text-base"></i>
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
                 </div>
-                <p class="border p-2">訂單完成</p>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
+              </div>
+            </td>
+          </tr>
+          <!-- row 1 -->
+          <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
+            <td class="hidden lg:table-cell lg:border-0">
+              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">商品名稱</p>
+              <p>[ 1000片 ] - 春眠 (もの久保 )</p>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">數量</p>
+              <div class="border px-3 py-1 lg:px-4 lg:py-2 inline">1</div>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">金額</p>
+              <p>$2000</p>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">訂購資訊</p>
+              <div class="=">
+                <p>名字: 王曉蕾</p>
+                <p>電話:0912-345-429</p>
+                <p>信箱 :wang@gmail.com</p>
+                <p>地址: 252 新北市三芝區觀海街10號</p>
+              </div>
+            </td>
+            <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
+              <div class="flex">
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
+                </div>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
+              </div>
+            </td>
+          </tr>
+          <!-- row 1 -->
+          <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
+            <td class="hidden lg:table-cell lg:border-0">
+              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">商品名稱</p>
+              <p>[ 1000片 ] - 春眠 (もの久保 )</p>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">數量</p>
+              <div class="border px-3 py-1 lg:px-4 lg:py-2 inline">1</div>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">金額</p>
+              <p>$2000</p>
+            </td>
+            <td class="border-b lg:border-0 border-gray-300">
+              <p class="lg:hidden font-bold mb-1">訂購資訊</p>
+              <div class="=">
+                <p>名字: 王曉蕾</p>
+                <p>電話:0912-345-429</p>
+                <p>信箱 :wang@gmail.com</p>
+                <p>地址: 252 新北市三芝區觀海街10號</p>
+              </div>
+            </td>
+            <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
+              <div class="flex">
+                <div class="form-control mr-3">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-accent checkbox-md" />
+                  </label>
+                </div>
+                <p class="border px-4 align-baseline py-2 bg-light-green text-white rounded-lg">訂單完成</p>
               </div>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <!-- 分頁 -->
     <div class="flex justify-center">
-      <div class="btn-group ">
-        <button class="btn btn-md bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black">«</button>
-        <button class="btn btn-md   bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black btn-active">1</button>
-        <button class="btn btn-md   bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black">2</button>
-        <button class="btn btn-md   bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black">3</button>
-        <button class="btn btn-md   bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black">4</button>
-        <button class="btn btn-md  bg-white  active:bg-secondary  hover:bg-gray-200 hover:ring-gray-200   text-black">»</button>
+      <div class="btn-group">
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">«</button>
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black btn-active">1</button>
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">2</button>
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">3</button>
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">4</button>
+        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">»</button>
       </div>
     </div>
   </div>
