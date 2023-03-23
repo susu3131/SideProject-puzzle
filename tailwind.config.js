@@ -17,6 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         'puzzle': "url('/src/assets/image/bg.jpg')",
+        'banner': "url('/src/assets/image/index/banner.png')",
       }
     },
   },

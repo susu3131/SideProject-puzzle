@@ -42,7 +42,7 @@
         </nav>
       </header>
 
-      <div class="h-[72vh]">
+      <div class="">
         <RouterView />
       </div>
 
