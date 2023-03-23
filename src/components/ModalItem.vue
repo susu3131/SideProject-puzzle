@@ -50,7 +50,7 @@ export default {
       this.modal = false
     },
     login() {
-      this.$router.push({ path: '/admin' })
+      this.$router.push({ path: '/order' })
     }
   }
 }

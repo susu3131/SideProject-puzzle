@@ -1,7 +1,11 @@
 <template>
-  <div class="bg-puzzle bg-contain flex flex-col h-screen ">
+  <div class="bg-puzzle bg-contain flex flex-col h-screen">
     <!--  header -->
     <div class="flex sm:py-3 items-center justify-center p-5 sm:pt-10 sm:px-10 lg:pb-0">
+      <div class="hidden lg:block">
+        <RouterLink to="/index"><i class="fa-solid fa-house"></i></RouterLink>
+        <RouterLink to="/g" class="ml-3"><i class="fa-solid fa-circle-exclamation"></i></RouterLink>
+      </div>
       <div class="lg:flex-1"></div>
       <!-- tittle -->
       <div class="flex items-center justify-center grow px-2 sm:mb-0 lg:shrink-0">
@@ -37,7 +41,7 @@
     <!-- footer -->
     <div class="bg-secondary text-center text-white py-4 md:py-6">
       <img src=".././assets/image/logo-white.svg" class="mx-auto" alt="logo" />
-      <p class=" text-sm md: text-base">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
+      <p class="text-sm md: text-base">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
     </div>
   </div>
 </template>
