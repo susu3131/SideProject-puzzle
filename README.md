@@ -2,7 +2,7 @@
 ![](https://i.imgur.com/IGBasHH.jpg)
 
 ## Demo
-[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/index)
+[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/#/index)
  
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
