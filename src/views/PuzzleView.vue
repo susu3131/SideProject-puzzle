@@ -23,7 +23,7 @@
           <!-- row 1 -->
           <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+              <img src=".././assets/image/product/product(8).jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
             </td>
             <td class="border-b lg:border-0 border-gray-300">
               <p class="lg:hidden font-bold mb-1">商品名稱</p>
@@ -58,7 +58,7 @@
           <!-- row 1 -->
           <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+              <img src=".././assets/image/product/product(8).jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
             </td>
             <td class="border-b lg:border-0 border-gray-300">
               <p class="lg:hidden font-bold mb-1">商品名稱</p>
@@ -93,7 +93,7 @@
           <!-- row 1 -->
           <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+              <img src=".././assets/image/product/product(8).jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
             </td>
             <td class="border-b lg:border-0 border-gray-300">
               <p class="lg:hidden font-bold mb-1">商品名稱</p>
@@ -128,7 +128,7 @@
           <!-- row 1 -->
           <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/1.jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+              <img src=".././assets/image/product/product(8).jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
             </td>
             <td class="border-b lg:border-0 border-gray-300">
               <p class="lg:hidden font-bold mb-1">商品名稱</p>

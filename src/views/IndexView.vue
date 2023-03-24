@@ -66,24 +66,24 @@
 
       <div class="grid grid-cols-3 gap-4 items-center">
         <div class="text-center mx-auto">
-          <img src="../assets/image/product/product (8).jpg" class="w-[300px]" alt="" />
+          <img src="../assets/image/product/product(8).jpg" class="w-[300px]" alt="" />
           <p class="mt-3">[ 1000片 ] - 春眠 (もの久保 )</p>
           <p class="text-pink text-lg mt-1">售價: NT $1300</p>
         </div>
         <div>
           <div class="text-center mx-auto mb-5">
-            <img src="../assets/image/product/product (9).jpg" alt="" />
+            <img src="../assets/image/product/product(9).jpg" alt="" />
             <p class="mt-3">[ 1200片 ] - 相遇 (もの久保 )</p>
             <p class="text-pink text-lg mt-1">售價: NT $1400</p>
           </div>
           <div class="text-center mx-auto">
-            <img src="../assets/image/product/product (7).jpg" alt="" />
+            <img src="../assets/image/product/product(7).jpg" alt="" />
             <p class="mt-3">[ 1200片 ] - 凝望 (もの久保 )</p>
             <p class="text-pink text-lg mt-1">售價: NT $1400</p>
           </div>
         </div>
         <div class="text-center mx-auto">
-          <img src="../assets/image/product/product (10).jpg" class="w-[300px]" alt="" />
+          <img src="../assets/image/product/product(10).jpg" class="w-[300px]" alt="" />
           <p class="mt-3">[ 1000片 ] - 奇幻鹿</p>
           <p class="text-pink text-lg mt-1">售價: NT $800</p>
         </div>
@@ -101,7 +101,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
           <div class="relative">
-            <img src="../assets/image/product/product (5).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(5).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
         </div>
@@ -109,7 +109,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.2</p>
           <div class="relative">
-            <img src="../assets/image/product/product (2).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(2).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
           <!-- 收藏 -->
@@ -120,7 +120,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.3</p>
           <div class="relative">
-            <img src="../assets/image/product/product (3).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(3).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
         </div>
@@ -128,7 +128,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.4</p>
           <div class="relative">
-            <img src="../assets/image/product/product (6).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(6).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
         </div>
@@ -137,7 +137,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.5</p>
           <div class="relative">
-            <img src="../assets/image/product/product (1).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(1).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
         </div>
@@ -146,7 +146,7 @@
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.6</p>
           <div class="relative">
-            <img src="../assets/image/product/product (4).jpg" alt="no1image" />
+            <img src="../assets/image/product/product(4).jpg" alt="no1image" />
             <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
           </div>
         </div>
