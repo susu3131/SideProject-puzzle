@@ -8,16 +8,16 @@ module.exports = {
     //覆蓋原樣式
     container: {
       center: true,
-      screens: {
-        xl: "1440px",
-      },
+      // screens: {
+        
+      // },
       //修改padding 
       padding: {
-        // DEFAULT: '1rem',
-        // sm: '2rem',
-        // lg: '4rem',
-        // xl: '5rem',
-        // '2xl': '6rem',
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '2rem',
+        xl: '3rem',
+        '2xl': '3rem',
       }
     },
     extend: {
