@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="vh-[80vh]">
     訂製拼圖
   </div>
 </template>
