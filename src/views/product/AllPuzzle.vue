@@ -1,6 +1,12 @@
 <template>
   <div>
-    全部拼圖
+    <div class="flex">
+      <button class="flex">
+        
+        <p>上一頁</p>
+      </button>
+      <div></div>
+    </div>
   </div>
 </template>
 

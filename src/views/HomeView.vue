@@ -27,18 +27,10 @@
             </div>
           </RouterLink>
           <!-- test -->
-          <!-- The button to open modal -->
           <label for="my-modal" class="border-r border-black flex items-center pr-8 pl-8 hover-button">
             <i class="fa-solid fa-user mr-4"></i>
             <p>會員登入</p>
           </label>
-
-          <!-- <button id="button" type="button">
-            <div class="border-r border-black flex items-center pr-8 pl-8">
-              <i class="fa-solid fa-user mr-4"></i>
-              <p>會員登入</p>
-            </div>
-          </button> -->
         </nav>
       </header>
 
