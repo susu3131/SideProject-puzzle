@@ -20,7 +20,6 @@ configure({
 })
 
 
-
 import './assets/main.css'
 import './assets/tailwind.css'
 
@@ -32,3 +31,5 @@ app.use(router)
 
 
 app.mount('#app')
+
+

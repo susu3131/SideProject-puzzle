@@ -44,7 +44,7 @@
 
           <div class="flex items-center col-span-3 justify-end text-lg pt-6">
             <label for="search" class="mr-2">
-              <input type="search" name="search" id="" value="搜尋喜愛的拼圖 ..." class=" p-2 rounded-md border text-sm  text-gray-400 focus:border-primary  focus:border-2 focus-visible:outline-none " />
+              <input type="search" name="search" id="" value="搜尋喜愛的拼圖 ..." class="p-2 rounded-md border text-sm text-gray-400 focus:border-primary focus:border-2 focus-visible:outline-none" />
             </label>
             <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="opensearch"></i>
 
@@ -92,6 +92,7 @@
 
 <script>
 import ModalItem from '.././components/ModalItem.vue'
+
 export default {
   data() {
     return {}
@@ -102,7 +103,7 @@ export default {
     }
   },
   components: {
-    ModalItem,
+    ModalItem
   },
 
 }

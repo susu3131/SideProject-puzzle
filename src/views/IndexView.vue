@@ -36,19 +36,19 @@
       </div>
 
       <div class="flex justify-center text-xl">
-        <div class=" mr-16 text-center  ">
+        <div class="mr-16 text-center">
           <i class="fa-solid fa-puzzle-piece text-4xl mb-2 text-pink"></i>
           <p>精選優質拼圖</p>
         </div>
-        <div class="mr-16 text-center  ">
+        <div class="mr-16 text-center">
           <i class="fa-solid fa-dragon text-4xl mb-2 text-pink"></i>
           <p>奇幻風格拼圖</p>
         </div>
-        <div class="mr-16 text-center  ">
+        <div class="mr-16 text-center">
           <i class="fa-solid fa-arrow-right-arrow-left text-4xl mb-2 text-pink"></i>
           <p>缺片換片服務</p>
         </div>
-        <div class=" text-center  ">
+        <div class="text-center">
           <i class="fa-solid fa-sack-dollar text-4xl mb-2 text-pink"></i>
           <p>不定期優惠折扣</p>
         </div>
@@ -153,8 +153,19 @@
       </div>
     </div>
   </div>
+  
 </template>
 
-<script>
-export default {}
+<script >
+snowStorm.autoStart = false;
+snowStorm.snowColor = '#ffffff';   
+snowStorm.flakesMaxActive = 300;    // 顯示雪
+
+  export default {
+    mounted () {
+      
+      console.log('test')
+    },
+  }
+
 </script>
