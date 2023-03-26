@@ -41,7 +41,7 @@
     <!-- footer -->
     <div class="bg-secondary text-center text-white py-4 md:py-6">
       <img src=".././assets/image/logo-white.svg" class="mx-auto" alt="logo" />
-      <p class="text-sm md: text-base">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
+      <p class="text-sm md: ">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
     </div>
   </div>
 </template>
