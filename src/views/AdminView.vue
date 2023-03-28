@@ -46,7 +46,9 @@
   </div>
 </template>
 
-<script>
+<script >
+  // snowStorm.autoStart = false
+// snowStorm.snowColor = '#99ccff';
 export default {}
 </script>
 
