@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="checkbox" id="my-modal" class="modal-toggle" />
+    <input type="checkbox" id="login-modal" class="modal-toggle" />
     <div class="modal" v-if="modal">
       <div class="modal-box relative p-0">
         <div class="bg-white rounded-lg shadow dark:bg-gray-700 text-center">

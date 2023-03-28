@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-puzzle bg-contain">
+  <div class="bg-puzzle bg-contain pt-5">
     <div class="flex flex-col justify-between">
       <!-- header -->
       <header class="container pt-3">
@@ -32,7 +32,6 @@
                   <p>訂製拼圖</p>
                 </div>
               </RouterLink>
-              <!-- test -->
               <RouterLink to="/customize">
                 <div class="flex items-center pr-8 pl-8 hover-button">
                   <i class="fa-solid fa-pen-to-square mr-4"></i>
@@ -43,13 +42,15 @@
           </div>
 
           <div class="flex items-center col-span-3 justify-end text-lg pt-6">
-            <label for="search" class="mr-2">
+            <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="showSearch = true"></i>
+            <label for="search" class="mr-2" v-if="showSearch">
               <input type="search" name="search" id="" value="搜尋喜愛的拼圖 ..." class="p-2 rounded-md border text-sm text-gray-400 focus:border-primary focus:border-2 focus-visible:outline-none" />
             </label>
-            <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="opensearch"></i>
+            <label for="cart-modal">
+              <i class="fa-solid fa-cart-shopping mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white"></i>
+            </label>
 
-            <i class="fa-solid fa-cart-shopping mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white"></i>
-            <label for="my-modal" class="flex items-center btn btn-outline btn-sm btn-error">
+            <label for="login-modal" class="flex items-center btn btn-outline btn-sm btn-error">
               <i class="fa-solid fa-circle-user mr-2"></i>
               <p>Login</p>
             </label>
@@ -86,26 +87,26 @@
       </footer>
     </div>
     <!-- 登入modal -->
-    <ModalItem />
+    <ModalItem></ModalItem>
+    <!-- cart modal -->
+    <CartItem></CartItem>
   </div>
 </template>
 
 <script>
 import ModalItem from '.././components/ModalItem.vue'
+import CartItem from '.././components/CartlItem.vue'
 
 export default {
   data() {
-    return {}
-  },
-  methods: {
-    opensearch() {
-      console.log('test')
+    return {
+      showSearch: false
     }
   },
   components: {
-    ModalItem
-  },
-
+    ModalItem,
+    CartItem
+  }
 }
 </script>
 
