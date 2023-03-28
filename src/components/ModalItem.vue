@@ -2,7 +2,7 @@
   <div>
     <input type="checkbox" id="login-modal" class="modal-toggle" />
     <div class="modal" v-if="modal">
-      <div class="modal-box relative p-0">
+      <div class="modal-box relative p-0 opacity-95">
         <div class="bg-white rounded-lg shadow dark:bg-gray-700 text-center">
           <!-- 關閉按鈕 -->
           <button @click="closeModal"  type="button" class="absolute top-5 right-2.5 bg-transparent text-white hover:bg-white hover:text-primary rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="authentication-modal">

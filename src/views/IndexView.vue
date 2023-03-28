@@ -157,9 +157,9 @@
 </template>
 
 <script >
-snowStorm.autoStart = false;
-snowStorm.snowColor = '#ffffff';   
-snowStorm.flakesMaxActive = 300;    // 顯示雪
+// snowStorm.autoStart = false;
+// snowStorm.snowColor = '#ffffff';   
+// snowStorm.flakesMaxActive = 300;    // 顯示雪
 
   export default {
     mounted () {

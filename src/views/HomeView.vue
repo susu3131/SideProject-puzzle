@@ -46,6 +46,16 @@
             <label for="search" class="mr-2" v-if="showSearch">
               <input type="search" name="search" id="" value="搜尋喜愛的拼圖 ..." class="p-2 rounded-md border text-sm text-gray-400 focus:border-primary focus:border-2 focus-visible:outline-none" />
             </label>
+            <!-- cart -->
+            <!-- <div class="dropdown dropdown-bottom dropdown-end mr-3 ">
+              <label tabindex="0" ><i class="fa-solid fa-cart-shopping p-2   hover:bg-primary hover:rounded-full  hover:text-white"></i></label>
+              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </div> -->
+            <!-- cart2 -->
+            
             <label for="cart-modal">
               <i class="fa-solid fa-cart-shopping mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white"></i>
             </label>
