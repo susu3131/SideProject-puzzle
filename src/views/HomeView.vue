@@ -1,19 +1,22 @@
 <template>
-  <div class="bg-puzzle bg-contain pt-5">
+  <div class="bg-puzzle bg-contain md:pt-5 pt-3">
     <div class="flex flex-col justify-between">
       <!-- header -->
       <header class="container pt-3">
-        <div class="grid grid-cols-12 items-center">
-          <div class="col-span-2"></div>
+        <div class="grid sm:grid-cols-12 grid-cols-8 items-center">
+          <div class="hidden sm:block col-span-2"></div>
+           <button class="btn btn-square btn-ghost col-span-1  sm:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
           <!-- tittle & nav -->
-          <div class="col-span-7">
+          <div class="sm:col-span-7 col-span-7  ">
             <!-- tittle -->
-            <div class="flex items-center justify-center">
+            <div class="flex items-center sm:justify-center justify-start">
               <img src=".././assets/image/logo.png" alt="logo" class="w-20 md:w-24" />
-              <p class="text-3xl md:text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
+              <p class="text-[28px] md:text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
             </div>
             <!-- nav -->
-            <nav class="font-bold text-center text-lg flex justify-center mt-1">
+            <nav class="font-bold text-center text-lg sm:flex justify-center mt-1 hidden">
               <RouterLink to="/index">
                 <div class="border-r border-black flex items-center pr-8 pl-8 hover:text-primary hover-button">
                   <i class="fa-solid fa-house mr-4"></i>
@@ -40,22 +43,13 @@
               </RouterLink>
             </nav>
           </div>
-
-          <div class="flex items-center col-span-3 justify-end text-lg pt-6">
+         
+          <div class="sm:flex items-center col-span-3 justify-end text-lg pt-6 hidden">
             <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="showSearch = true"></i>
             <label for="search" class="mr-2" v-if="showSearch">
               <input type="search" name="search" id="" value="搜尋喜愛的拼圖 ..." class="p-2 rounded-md border text-sm text-gray-400 focus:border-primary focus:border-2 focus-visible:outline-none" />
             </label>
-            <!-- cart -->
-            <!-- <div class="dropdown dropdown-bottom dropdown-end mr-3 ">
-              <label tabindex="0" ><i class="fa-solid fa-cart-shopping p-2   hover:bg-primary hover:rounded-full  hover:text-white"></i></label>
-              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
-              </ul>
-            </div> -->
-            <!-- cart2 -->
-            
+
             <label for="cart-modal">
               <i class="fa-solid fa-cart-shopping mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white"></i>
             </label>
@@ -106,7 +100,7 @@
 <script>
 import ModalItem from '.././components/ModalItem.vue'
 import CartItem from '.././components/CartlItem.vue'
-  // snowStorm.autoStart = false
+// snowStorm.autoStart = false
 // snowStorm.snowColor = '#99ccff';
 
 export default {
