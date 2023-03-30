@@ -1,21 +1,34 @@
 <template>
-  <div class="bg-puzzle bg-contain md:pt-5 pt-3">
+  <div class="bg-puzzle bg-contain md:pt-5 pt-3  ">
     <div class="flex flex-col justify-between">
       <!-- header -->
-      <header class="container pt-3">
-        <div class="grid sm:grid-cols-12 grid-cols-8 items-center">
+      <header class="container pt-3 ">
+        <div class="sm:grid sm:grid-cols-12  items-center  ">
           <div class="hidden sm:block col-span-2"></div>
-           <button class="btn btn-square btn-ghost col-span-1  sm:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          </button>
-          <!-- tittle & nav -->
-          <div class="sm:col-span-7 col-span-7  ">
+          <!-- phone nav -->
+          <div class="collapse  absolute sm:hidden -ml-4 ">
+            <input type="checkbox" />
+            <button class="collapse-title text-xl font-medium sm:hidden text-left ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div class="collapse-content   z-50 -ml-4">
+              <ul class="menu bg-base-100  w-screen  ">
+                <li><a>Item 1</a></li>
+                <li ><a>I have border</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+            
+        
+          <!-- tittle & pc nav -->
+          <div class="sm:col-span-7 ">
             <!-- tittle -->
-            <div class="flex items-center sm:justify-center justify-start">
+            <div class="flex items-center sm:justify-center justify-center">
               <img src=".././assets/image/logo.png" alt="logo" class="w-20 md:w-24" />
               <p class="text-[28px] md:text-4xl font-extrabold text-primary">拼圖趣 Puzzle</p>
             </div>
-            <!-- nav -->
+            <!-- pc nav -->
             <nav class="font-bold text-center text-lg sm:flex justify-center mt-1 hidden">
               <RouterLink to="/index">
                 <div class="border-r border-black flex items-center pr-8 pl-8 hover:text-primary hover-button">
@@ -43,7 +56,7 @@
               </RouterLink>
             </nav>
           </div>
-         
+
           <div class="sm:flex items-center col-span-3 justify-end text-lg pt-6 hidden">
             <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="showSearch = true"></i>
             <label for="search" class="mr-2" v-if="showSearch">
@@ -106,7 +119,8 @@ import CartItem from '.././components/CartlItem.vue'
 export default {
   data() {
     return {
-      showSearch: false
+      showSearch: false,
+      showNav: false
     }
   },
   components: {
