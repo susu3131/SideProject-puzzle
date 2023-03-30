@@ -5,6 +5,7 @@
       <header class="container pt-3 ">
         <div class="sm:grid sm:grid-cols-12  items-center  ">
           <div class="hidden sm:block col-span-2"></div>
+
           <!-- phone nav -->
           <div class="collapse  absolute sm:hidden -ml-4 ">
             <input type="checkbox" />
@@ -12,7 +13,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
             <div class="collapse-content   z-50 -ml-4">
-              <ul class="menu bg-base-100  w-screen  ">
+              <ul class="menu  bg-base-100  w-screen ">
                 <li><a>Item 1</a></li>
                 <li ><a>I have border</a></li>
                 <li><a>Item 3</a></li>
