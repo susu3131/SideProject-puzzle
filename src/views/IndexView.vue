@@ -21,35 +21,36 @@
       </div>
     </div>
     <!-- 關於我們 -->
-    <div class="container py-10">
-      <div class="flex justify-center relative mb-10 items-center">
+    <div class="container py-10 lg:py-16">
+      <div class="flex justify-center relative mb-10 items-center sm:mb-8 md:mb-10 lg:mb-14">
         <i class="fa-solid fa-store text-[28px] mr-3"></i>
         <h2>關於我們</h2>
       </div>
 
-      <div class="flex justify-center mb-10">
-        <div class="flex items-center mr-10">
-          <img src="../assets/image/logo.png" class="w-[100px]" alt="" />
-          <p class="text-primary font-black text-3xl">拼圖趣 Puzzle</p>
+      <div class="lg:flex justify-center mb-10 sm:mb-12 bg-opacity-70 bg-white py-10 sm:pt-5 sm:pb-8 lg:py-10 px-4 border border-primary lg:w-5/6 xl:w-2/3 lg:mx-auto md:mb-14 ">
+        <div class="sm:flex items-center sm:mr-10 mb-8 sm:mb-6 justify-center">
+          <img src="../assets/image/logo.png" class="w-[80px] sm:w-[90px] mx-auto sm:mx-0" alt="" />
+          <p class="text-primary font-black sm:text-3xl text-2xl text-center">拼圖趣 Puzzle</p>
         </div>
-        <p>我們是拼圖趣Puzzle ，很榮幸有這機會為大家服務 <br />本店主要經營販售奇幻風格拼圖，與各大繪師畫家進行合作 <br />想要挑選最優質材質的拼圖嗎 ? 想要蒐集最特別奇幻風格 ? <br />缺片提供補片服務，還享有不定期優惠折扣 ! <br />歡迎大家選購喜愛的拼圖，祝購物愉快 !</p>
+        <p class="sm:hidden">我們是拼圖趣Puzzle ，很榮幸有這機會為大家服務，本店主要經營販售奇幻風格拼圖，與各大繪師畫家進行合作，想要挑選最優質材質的拼圖嗎 ? 想要蒐集最特別奇幻風格 ?缺片提供補片服務，還享有不定期優惠折扣 !歡迎大家選購喜愛的拼圖，祝購物愉快 !</p>
+        <p class="hidden sm:block pl-24 md:pl-32 lg:pl-0">我們是拼圖趣Puzzle ，很榮幸有這機會為大家服務 <br />本店主要經營販售奇幻風格拼圖，與各大繪師畫家進行合作 <br />想要挑選最優質材質的拼圖嗎 ? 想要蒐集最特別奇幻風格 ? <br />缺片提供補片服務，還享有不定期優惠折扣 ! <br />歡迎大家選購喜愛的拼圖，祝購物愉快 !</p>
       </div>
 
-      <div class="flex justify-center text-xl">
-        <div class="mr-16 text-center">
-          <i class="fa-solid fa-puzzle-piece text-4xl mb-2 text-pink"></i>
+      <div class="sm:flex justify-center text-xl sm:flex-wrap lg:w-2/3 lg:mx-auto">
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+          <i class="fa-solid fa-puzzle-piece text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
           <p>精選優質拼圖</p>
         </div>
-        <div class="mr-16 text-center">
-          <i class="fa-solid fa-dragon text-4xl mb-2 text-pink"></i>
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+          <i class="fa-solid fa-dragon text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
           <p>奇幻風格拼圖</p>
         </div>
-        <div class="mr-16 text-center">
-          <i class="fa-solid fa-arrow-right-arrow-left text-4xl mb-2 text-pink"></i>
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+          <i class="fa-solid fa-arrow-right-arrow-left text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
           <p>缺片換片服務</p>
         </div>
-        <div class="text-center">
-          <i class="fa-solid fa-sack-dollar text-4xl mb-2 text-pink"></i>
+        <div class="text-center sm:w-1/2 lg:w-1/4">
+          <i class="fa-solid fa-sack-dollar text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
           <p>不定期優惠折扣</p>
         </div>
       </div>
@@ -153,19 +154,16 @@
       </div>
     </div>
   </div>
-  
 </template>
 
-<script >
+<script>
 // snowStorm.autoStart = false;
-// snowStorm.snowColor = '#ffffff';   
+// snowStorm.snowColor = '#ffffff';
 // snowStorm.flakesMaxActive = 300;    // 顯示雪
 
-  export default {
-    mounted () {
-      
-      console.log('test')
-    },
+export default {
+  mounted() {
+    console.log('test')
   }
-
+}
 </script>

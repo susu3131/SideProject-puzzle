@@ -7,9 +7,9 @@
           <div class="hidden sm:block col-span-2"></div>
 
           <!-- phone nav -->
-          <div class="collapse absolute sm:hidden -ml-4">
+          <div class="collapse absolute sm:hidden -ml-4 ">
             <input type="checkbox" />
-            <button class="collapse-title text-5xl font-medium sm:hidden text-left">
+            <button class="collapse-title text-5xl font-medium sm:hidden text-left ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
             <div class="collapse-content z-50 -ml-4">
@@ -85,7 +85,7 @@
               </RouterLink>
             </nav>
           </div>
-
+          
           <div class="sm:flex items-center col-span-3 justify-end text-lg pt-6 hidden">
             <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="showSearch = true"></i>
             <label for="search" class="mr-2" v-if="showSearch">
