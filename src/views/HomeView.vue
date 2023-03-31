@@ -1,29 +1,57 @@
 <template>
-  <div class="bg-puzzle bg-contain md:pt-5 pt-3  ">
+  <div class="bg-puzzle bg-contain md:pt-5 pt-3">
     <div class="flex flex-col justify-between">
       <!-- header -->
-      <header class="container pt-3 ">
-        <div class="sm:grid sm:grid-cols-12  items-center  ">
+      <header class="container pt-3">
+        <div class="sm:grid sm:grid-cols-12 items-center">
           <div class="hidden sm:block col-span-2"></div>
 
           <!-- phone nav -->
-          <div class="collapse  absolute sm:hidden -ml-4 ">
+          <div class="collapse absolute sm:hidden -ml-4">
             <input type="checkbox" />
-            <button class="collapse-title text-xl font-medium sm:hidden text-left ">
+            <button class="collapse-title text-5xl font-medium sm:hidden text-left">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
-            <div class="collapse-content   z-50 -ml-4">
-              <ul class="menu  bg-base-100  w-screen ">
-                <li><a>Item 1</a></li>
-                <li ><a>I have border</a></li>
-                <li><a>Item 3</a></li>
+            <div class="collapse-content z-50 -ml-4">
+              <ul class="menu bg-white border-t-2 border-b-2 border-primary  w-screen ">
+                <li class=" border-b">
+                  <RouterLink to="/index">
+                    <div class="  flex justify-center pr-4   items-center w-full ">
+                      <i class="fa-solid fa-house mr-5"></i>
+                      <p>首頁</p>
+                    </div>
+                  </RouterLink>
+                </li>
+                <li class=" border-b">
+                  <RouterLink to="/products">
+                    <div class=" flex justify-center pr-4 items-center w-full ">
+                      <i class="fa-solid fa-puzzle-piece mr-5"></i>
+                      <p>精選商品</p>
+                    </div>
+                  </RouterLink>
+                </li>
+                <li class=" border-b">
+                  <RouterLink to="/customize">
+                    <div class=" flex justify-center pr-4 items-center w-full ">
+                      <i class="fa-solid fa-pen-to-square mr-5"></i>
+                      <p>訂製拼圖</p>
+                    </div>
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/customize">
+                    <div class="flex justify-center pr-4 items-center w-full ">
+                      <i class="fa-solid fa-pen-to-square mr-5"></i>
+                      <p>我的收藏</p>
+                    </div>
+                  </RouterLink>
+                </li>
               </ul>
             </div>
           </div>
-            
-        
+
           <!-- tittle & pc nav -->
-          <div class="sm:col-span-7 ">
+          <div class="sm:col-span-7">
             <!-- tittle -->
             <div class="flex items-center sm:justify-center justify-center">
               <img src=".././assets/image/logo.png" alt="logo" class="w-20 md:w-24" />

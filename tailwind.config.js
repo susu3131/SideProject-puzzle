@@ -39,5 +39,15 @@ module.exports = {
   plugins: [
     require("daisyui")
   ],
-
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#F56257',
+          'primary-content': '#ffffff',
+          'base-100': '#F2F2F2',
+        },
+      },
+    ],
+  },
 }
