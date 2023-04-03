@@ -43,9 +43,9 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: '#F56257',
-          'primary-content': '#ffffff',
-          'base-100': '#F2F2F2',
+          primary: '#ffffff',
+          'primary-content': '#F56257',
+          'base-100': '#F5F5F5',
         },
       },
     ],

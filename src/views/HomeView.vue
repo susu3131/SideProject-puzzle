@@ -7,32 +7,49 @@
           <div class="hidden sm:block col-span-2"></div>
 
           <!-- phone nav -->
-          <div class="collapse absolute sm:hidden -ml-4 ">
+          <div class="collapse absolute sm:hidden -ml-4">
             <input type="checkbox" />
-            <button class="collapse-title text-5xl font-medium sm:hidden text-left ">
+            <button class="collapse-title text-5xl font-medium sm:hidden text-left">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
             <div class="collapse-content z-50 -ml-4">
-              <ul class="menu bg-white border-t-2 border-b-2 border-primary  w-screen ">
-                <li class=" border-b">
+              <ul class="menu bg-white border-t-2 border-b-2 border-primary w-screen  to-base-100">
+                <li class="border-b ">
+                  <div class="flex justify-center items-center  text-white bg-primary active:bg-opacity-50">
+                    <label for="login-modal" class="flex items-center justify-center w-full">
+                      <i class="fa-solid fa-circle-user mr-2"></i>
+                      <p>Login</p>
+                    </label>
+                  </div>
+                </li>
+                <li class="border-b" >
+                  <div class="flex justify-center">
+                    <i class="fa-solid fa-magnifying-glass  p-2"></i>
+                    <label for="search" class="mr-2 w-full">
+                      <input type="search" name="search" id="" placeholder="搜尋喜愛的拼圖 ..." value="" class="p-2 rounded-md border text-sm text-gray-400 focus:border-primary focus:border-2 focus-visible:outline-none w-full" />
+                    </label>
+                  </div>
+                </li>
+
+                <li class="border-b">
                   <RouterLink to="/index">
-                    <div class="  flex justify-center pr-4   items-center w-full ">
+                    <div class="flex justify-center pr-4 items-center w-full">
                       <i class="fa-solid fa-house mr-5"></i>
                       <p>首頁</p>
                     </div>
                   </RouterLink>
                 </li>
-                <li class=" border-b">
+                <li class="border-b">
                   <RouterLink to="/products">
-                    <div class=" flex justify-center pr-4 items-center w-full ">
+                    <div class="flex justify-center pr-4 items-center w-full">
                       <i class="fa-solid fa-puzzle-piece mr-5"></i>
                       <p>精選商品</p>
                     </div>
                   </RouterLink>
                 </li>
-                <li class=" border-b">
+                <li class="border-b">
                   <RouterLink to="/customize">
-                    <div class=" flex justify-center pr-4 items-center w-full ">
+                    <div class="flex justify-center pr-4 items-center w-full">
                       <i class="fa-solid fa-pen-to-square mr-5"></i>
                       <p>訂製拼圖</p>
                     </div>
@@ -40,7 +57,7 @@
                 </li>
                 <li>
                   <RouterLink to="/customize">
-                    <div class="flex justify-center pr-4 items-center w-full ">
+                    <div class="flex justify-center pr-4 items-center w-full">
                       <i class="fa-solid fa-pen-to-square mr-5"></i>
                       <p>我的收藏</p>
                     </div>
@@ -85,7 +102,7 @@
               </RouterLink>
             </nav>
           </div>
-          
+
           <div class="sm:flex items-center col-span-3 justify-end text-lg pt-6 hidden">
             <i class="fa-solid fa-magnifying-glass mr-3 p-2 hover:bg-primary hover:rounded-full hover:text-white" @click="showSearch = true"></i>
             <label for="search" class="mr-2" v-if="showSearch">
@@ -104,7 +121,13 @@
         </div>
       </header>
 
-      <div class="">
+      <div class="relative">
+        <!-- phone cart & login  -->
+        <div class="bottom-5 right-3 fixed z-50">
+          <label for="cart-modal" class="mt-3">
+            <i class="fa-solid fa-cart-shopping text-lg py-2 px-3 border bg-white rounded-full hover:text-primary"></i>
+          </label>
+        </div>
         <RouterView />
       </div>
 
@@ -132,6 +155,7 @@
         </div>
       </footer>
     </div>
+
     <!-- 登入modal -->
     <ModalItem></ModalItem>
     <!-- cart modal -->
@@ -176,4 +200,11 @@ export default {
     @apply text-primary;
   }
 }
+
+// .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
+//   --tw-bg-opacity: 0;
+//   background-color: white; /* 更改此處的顏色 */
+//   --tw-text-opacity: 0;
+
+// }
 </style>
