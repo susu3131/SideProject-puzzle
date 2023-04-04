@@ -123,7 +123,7 @@
 
       <div class="relative">
         <!-- phone cart & login  -->
-        <div class="bottom-5 right-3 fixed z-50">
+        <div class=" bottom-40 right-5 fixed z-50 sm:hidden">
           <label for="cart-modal" class="mt-3">
             <i class="fa-solid fa-cart-shopping text-lg py-2 px-3 border bg-white rounded-full hover:text-primary"></i>
           </label>
@@ -132,26 +132,29 @@
       </div>
 
       <!-- footer -->
-      <footer class="text-center bg-primary text-white py-8">
+      <footer class="text-center bg-primary text-white md:py-8 py-4">
         <div class="container mx-auto">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <img src=".././assets/image/logo-white.svg" alt="logo-white" />
-              <div class="text-2xl ml-8">
-                <i class="fa-brands fa-facebook mr-4"></i>
-                <i class="fa-brands fa-facebook-messenger mr-4"></i>
-                <i class="fa-solid fa-envelope mr-4"></i>
+          
+          <div class="lg:flex items-center justify-between mb-3 sm:mb-1  lg:mb-0">
+            <div class="flex items-center justify-between sm:mb-3">
+              <img src=".././assets/image/logo-white.svg" alt="logo-white" class="  w-52 sm:-ml-3 md:ml-0" />
+              <div class="sm:text-2xl md:ml-8 text-xl ">
+                <i class="fa-brands fa-facebook md:mr-4 mr-3"></i>
+                <i class="fa-brands fa-facebook-messenger md:mr-4  mr-3"></i>
+                <i class="fa-solid fa-envelope md:mr-4  mr-3"></i>
               </div>
             </div>
-            <div class="flex items-center">
-              <p class="font-bold text-lg">Contact</p>
+            <hr class="  opacity-50 mb-3 lg:hidden">
+            <div class="sm:flex items-center  hidden">
+              <p class="font-bold text-lg ">Contact</p>
               <div class="text-left ml-8">
                 <p>電話 : 02-22120352</p>
                 <p>地址 : 新北市新店區北新路二段304-1號</p>
               </div>
             </div>
           </div>
-          <p class="font-normal">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
+          <hr class="  opacity-50 mb-3 hidden lg:block">
+          <p class="font-normal  text-xs md:text-sm  lg:text-base text-left ">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -173,7 +176,8 @@ export default {
   data() {
     return {
       showSearch: false,
-      showNav: false
+      showNav: false,
+      
     }
   },
   methods: {

@@ -1,5 +1,7 @@
 <template>
   <div class="py-10">
+    <audio src="../assets/Glass - Anno Domini Beats.mp3" controls autoplay>遇到不支援的瀏覽器會出現這行字</audio>
+
     <!-- banner -->
     <div class="bg-banner h-[90vh] bg-no-repeat relative">
       <div class="bg-primary text-center w-[500px] text-5xl py-5 px-10 text-bold text-white opacity-90 absolute top-[65%] right-[22%]">
@@ -8,12 +10,14 @@
       </div>
     </div>
     <!-- new -->
-    <div class="bg-pink flex justify-center p-4">
-      <div class="container flex justify-center">
-        <h3 class="text-white p-3 text-2xl">最新消息</h3>
-        <div class="bg-white rounded-md p-3 w-[70%]">
-          <p>各位顧客您好 ， 我們的拼圖店即將開業！我們將於 2023 / 01 / 05 正式開幕，在我們的拼圖店，您可以找到各種各樣的拼圖，從初學者級別到專業級別，並且還有各種主題和類型可供選擇，我們也會有一些獨家和限量版的拼圖，在我們的拼圖店，您可以找到各種各樣的拼圖，還有各種主題和類型可供選擇，我們也會陸續提供一些獨家限量的拼圖，感謝您的關注和支持，我們期待與您相見！</p>
-          <div class="flex justify-between">
+    <div class="bg-pink flex justify-center md:p-4 py-8">
+      <div class="container md:flex justify-center">
+        <h3 class="text-white md:p-3 text-2xl mb-3">最新消息</h3>
+        <div class="bg-white rounded-md md:p-3 py-5 px-4 md:w-[70%]">
+          <p>
+            <span v-for="(char, index) in chars" :key="index">{{ char }}</span>
+          </p>
+          <div class="flex justify-between mt-5 text-sm">
             <p>[ 拼圖趣 Puzzle ]</p>
             <p>2023/01/03</p>
           </div>
@@ -27,7 +31,7 @@
         <h2>關於我們</h2>
       </div>
 
-      <div class="lg:flex justify-center mb-10 sm:mb-12 bg-opacity-70 bg-white py-10 sm:pt-5 sm:pb-8 lg:py-10 px-4 border border-primary lg:w-5/6 xl:w-2/3 lg:mx-auto md:mb-14 ">
+      <div class="lg:flex justify-center mb-10 sm:mb-12 bg-opacity-70 bg-white py-10 sm:pt-5 sm:pb-8 lg:py-10 px-4 border border-primary lg:w-5/6 xl:w-2/3 lg:mx-auto md:mb-14">
         <div class="sm:flex items-center sm:mr-10 mb-8 sm:mb-6 justify-center">
           <img src="../assets/image/logo.png" class="w-[80px] sm:w-[90px] mx-auto sm:mx-0" alt="" />
           <p class="text-primary font-black sm:text-3xl text-2xl text-center">拼圖趣 Puzzle</p>
@@ -38,19 +42,19 @@
 
       <div class="sm:flex justify-center text-xl sm:flex-wrap lg:w-2/3 lg:mx-auto">
         <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
-          <i class="fa-solid fa-puzzle-piece text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
+          <i class="fa-solid fa-puzzle-piece text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>精選優質拼圖</p>
         </div>
         <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
-          <i class="fa-solid fa-dragon text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
+          <i class="fa-solid fa-dragon text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>奇幻風格拼圖</p>
         </div>
         <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
-          <i class="fa-solid fa-arrow-right-arrow-left text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
+          <i class="fa-solid fa-arrow-right-arrow-left text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>缺片換片服務</p>
         </div>
         <div class="text-center sm:w-1/2 lg:w-1/4">
-          <i class="fa-solid fa-sack-dollar text-5xl lg:text-4xl  sm:mb-2 mb-4 text-pink"></i>
+          <i class="fa-solid fa-sack-dollar text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>不定期優惠折扣</p>
         </div>
       </div>
@@ -162,8 +166,32 @@
 // snowStorm.flakesMaxActive = 300;    // 顯示雪
 
 export default {
+  data() {
+    return {
+      newInfo: '各位顧客您好 ， 我們的拼圖店即將開業！我們將於 2023 / 01 / 05 正式開幕，在我們的拼圖店，您可以找到各種各樣的拼圖，從初學者級別到專業級別，並且還有各種主題和類型可供選擇，我們也會有一些獨家和限量版的拼圖，在我們的拼圖店，您可以找到各種各樣的拼圖，還有各種主題和類型可供選擇，我們也會陸續提供一些獨家限量的拼圖，感謝您的關注和支持，我們期待與您相見！',
+      showInfo: ''
+    }
+  },
+  computed: {
+    chars() {
+      return this.showInfo.split('')
+    }
+  },
+  methods: {
+    // 秀出公告
+    showNewInfo() {
+      let i = 0
+      setInterval(() => {
+        if (i < this.newInfo.length) {
+          this.showInfo += this.newInfo.charAt(i)
+          i++
+        }
+      }, 80)
+    }
+  },
   mounted() {
-    console.log('test')
+    console.log(this.newInfo.length)
+    this.showNewInfo()
   }
 }
 </script>
