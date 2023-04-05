@@ -1,7 +1,5 @@
 <template>
   <div class="py-10">
-    <audio src="../assets/Glass - Anno Domini Beats.mp3" controls autoplay>遇到不支援的瀏覽器會出現這行字</audio>
-
     <!-- banner -->
     <div class="bg-banner h-[90vh] bg-no-repeat relative">
       <div class="bg-primary text-center w-[500px] text-5xl py-5 px-10 text-bold text-white opacity-90 absolute top-[65%] right-[22%]">
@@ -11,9 +9,9 @@
     </div>
     <!-- new -->
     <div class="bg-pink flex justify-center md:p-4 py-8">
-      <div class="container md:flex justify-center">
-        <h3 class="text-white md:p-3 text-2xl mb-3">最新消息</h3>
-        <div class="bg-white rounded-md md:p-3 py-5 px-4 md:w-[70%]">
+      <div class="container lg:flex justify-center">
+        <h3 class="text-white lg:mr-5 text-2xl mb-3">最新消息</h3>
+        <div class="bg-white rounded-md md:p-3 py-5 px-4 lg:w-[70%]">
           <p>
             <span v-for="(char, index) in chars" :key="index">{{ char }}</span>
           </p>
