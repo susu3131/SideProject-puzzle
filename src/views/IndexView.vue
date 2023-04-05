@@ -101,11 +101,12 @@
       </div>
 
       <div class="grid grid-cols-3 gap-4">
-        <div>
+        <div >
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(5).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative  overflow-hidden add-cart ">
+            <img src="../assets/image/product/product(5).jpg" class="   duration-500" alt="no1image" />
+            
+            <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button>
           </div>
         </div>
         <!-- 1 -->
