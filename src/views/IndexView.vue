@@ -101,57 +101,58 @@
       </div>
 
       <div class="grid grid-cols-3 gap-4">
-        <div >
+        <!-- 1 -->
+        <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
-          <div class="relative  overflow-hidden add-cart ">
-            <img src="../assets/image/product/product(5).jpg" class="   duration-500" alt="no1image" />
-            
-            <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['狼(もの久保)']">
+            <img src="../assets/image/product/product(5).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
         </div>
-        <!-- 1 -->
+        <!-- 2 -->
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.2</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(2).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['相遇(もの久保)']">
+            <img src="../assets/image/product/product(2).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
-          <!-- 收藏 -->
-          <i class="fa-solid fa-heart"></i>
-          <i class="fa-regular fa-heart"></i>
         </div>
-        <!-- 1 -->
+        <!-- 3 -->
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.3</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(3).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['山村貓語(AFU)']">
+            <img src="../assets/image/product/product(3).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
         </div>
-        <!-- 1 -->
+        <!-- 4 -->
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.4</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(6).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['雪(もの久保)']">
+            <img src="../assets/image/product/product(6).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
         </div>
-
-        <!-- 1 -->
+        <!-- 2 -->
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.5</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(1).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['NightMarket(AFU)']">
+            <img src="../assets/image/product/product(1).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
         </div>
-
-        <!-- 1 -->
+        <!-- 2 -->
         <div>
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.6</p>
-          <div class="relative">
-            <img src="../assets/image/product/product(4).jpg" alt="no1image" />
-            <button class="btn btn-sm bg-primary absolute right-4 bottom-4 text-lg">加入購物車</button>
+          <div class="relative overflow-hidden add-cart add-cart-text before:content-['幻想物語(CullenCole)']">
+            <img src="../assets/image/product/product(4).jpg" class="" alt="no1image" />
+
+            <!-- <button class="btn btn-sm bg-primary absolute  right-4 bottom-4 text-lg   opacity-0 hover:opacity-100  ">加入購物車</button> -->
           </div>
         </div>
       </div>
@@ -194,3 +195,19 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.add-cart {
+  @apply after:content-['加入購物車'] after:text-sm after:absolute after:bottom-24 after:right-44 after:py-1 after:px-5 after:rounded-md after:text-white after:border after:bg-primary after:bg-opacity-90 after:opacity-0 ;
+  &:hover:after {
+    @apply opacity-100 duration-200;
+  }
+}
+.add-cart-text {
+  //自行加入商品名稱
+  @apply before:absolute before:text-xl  before:w-full before:bg-opacity-50  before:bg-dark before:h-full  before:text-white before:flex before:justify-center before:items-center before:opacity-0;
+  &:hover:before {
+    @apply opacity-100 duration-500;
+  }
+}
+</style>
