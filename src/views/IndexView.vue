@@ -60,34 +60,37 @@
     <!-- 新品上市 -->
     <div class="container py-10">
       <div class="flex justify-center items-center">
-        <div class="flex justify-center items-center mb-10 w-1/6 bg-primary text-white p-3">
+        <div class="flex justify-center items-center mb-10 bg-primary text-white px-10 py-2 xl:py-3 xl:px-12">
           <i class="fa-solid fa-puzzle-piece text-[28px] mr-3"></i>
-          <!-- <i class="fa-solid fa-ranking-star mr-3 text-[28px]"></i> -->
           <h2>新品上市</h2>
         </div>
       </div>
 
-      <div class="grid grid-cols-3 gap-4 items-center">
-        <div class="text-center mx-auto">
-          <img src="../assets/image/product/product(8).jpg" class="w-[300px]" alt="" />
-          <p class="mt-3">[ 1000片 ] - 春眠 (もの久保 )</p>
+      <div class="md:grid grid-cols-3 gap-4 items-center">
+        <div class="text-center mx-auto mb-6 md:mb-0 ">
+          <div class=" relative">
+            <div class="go-product-button hover:origin-le hover:-translate-y-5  hover:rotate-12  duration-300 ">
+              <img src="../assets/image/product/product(8).jpg" class="md:w-[300px] mx-auto " alt="" />
+            </div>
+          </div>
+          <p class="mt-2">[ 1000片 ] - 春眠 (もの久保 )</p>
           <p class="text-pink text-lg mt-1">售價: NT $1300</p>
         </div>
         <div>
-          <div class="text-center mx-auto mb-5">
-            <img src="../assets/image/product/product(9).jpg" alt="" />
-            <p class="mt-3">[ 1200片 ] - 相遇 (もの久保 )</p>
-            <p class="text-pink text-lg mt-1">售價: NT $1400</p>
+          <div class="text-center mx-auto md:mb-5 mb-6">
+            <img src="../assets/image/product/product(9).jpg" class="mx-auto" alt="" />
+            <p class="mt-2">[ 1200片 ] - 相遇 (もの久保 )</p>
+            <p class="text-pink text-lg">售價: NT $1400</p>
           </div>
-          <div class="text-center mx-auto">
-            <img src="../assets/image/product/product(7).jpg" alt="" />
-            <p class="mt-3">[ 1200片 ] - 凝望 (もの久保 )</p>
+          <div class="text-center mx-auto mb-6 md:mb-0">
+            <img src="../assets/image/product/product(7).jpg" class="mx-auto" alt="" />
+            <p class="mt-2">[ 1200片 ] - 凝望 (もの久保 )</p>
             <p class="text-pink text-lg mt-1">售價: NT $1400</p>
           </div>
         </div>
         <div class="text-center mx-auto">
-          <img src="../assets/image/product/product(10).jpg" class="w-[300px]" alt="" />
-          <p class="mt-3">[ 1000片 ] - 奇幻鹿</p>
+          <img src="../assets/image/product/product(10).jpg" class="md:w-[300px] mx-auto" alt="" />
+          <p class="mt-2">[ 1000片 ] - 奇幻鹿</p>
           <p class="text-pink text-lg mt-1">售價: NT $800</p>
         </div>
       </div>
@@ -102,50 +105,50 @@
 
       <div class="md:grid xl:grid-cols-3 md:grid-cols-2 gap-4">
         <!-- 1 -->
-        <div class=" mb-6 md:mb-0"> 
+        <div class="mb-6 md:mb-0">
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.1</p>
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
             <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['狼(もの久保)'] duration-300 text-center">
               <img src="../assets/image/product/product(5).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
         <!-- 2 -->
-        <div class=" mb-6 md:mb-0">
+        <div class="mb-6 md:mb-0">
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.2</p>
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
-            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['相遇(もの久保)'] duration-300  text-center">
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
+            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['相遇(もの久保)'] duration-300 text-center">
               <img src="../assets/image/product/product(2).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
         <!-- 3 -->
-        <div class=" mb-6 md:mb-0">
+        <div class="mb-6 md:mb-0">
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.3</p>
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
-            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['山村貓語(AFU)'] duration-300  text-center">
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
+            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['山村貓語(AFU)'] duration-300 text-center">
               <img src="../assets/image/product/product(3).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
         <!-- 4 -->
-        <div class="xl:mt-5 mb-6 md:mb-0" >
+        <div class="xl:mt-5 mb-6 md:mb-0">
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.4</p>
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
-            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['雪(もの久保)'] duration-300  text-center">
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
+            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['雪(もの久保)'] duration-300 text-center">
               <img src="../assets/image/product/product(6).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
@@ -154,11 +157,11 @@
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.5</p>
 
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
-            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['NightMarket(AFU)'] duration-300  text-center">
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
+            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['NightMarket(AFU)'] duration-300 text-center">
               <img src="../assets/image/product/product(1).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
@@ -166,11 +169,11 @@
         <div class="xl:mt-5 mb-6 md:mb-0">
           <p class="text-light-green text-center text-2xl font-black mb-3">NO.6</p>
           <div class="relative overflow-hidden">
-            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg  opacity-90"></i>
-            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['幻想物語(CullenCole)'] duration-300  text-center">
+            <i class="fa-solid fa-cart-shopping absolute text-white top-3 left-3 md:hidden text-lg opacity-90"></i>
+            <div class="md:hover:scale-110 add-cart add-cart-text md:before:content-['幻想物語(CullenCole)'] duration-300 text-center">
               <img src="../assets/image/product/product(4).jpg" class="w-full" alt="no1image" />
               <!-- phone button -->
-              <button class="py-1 px-5 rounded-md text-white  bg-primary  mt-4 md:hidden ">加入購物車</button>
+              <button class="py-1 px-5 rounded-md text-white bg-primary mt-4 md:hidden">加入購物車</button>
             </div>
           </div>
         </div>
@@ -216,20 +219,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  //  熱銷排行 hover效果
-  @media (min-width: 768px) {
-    .add-cart {
-      @apply after:content-['加入購物車'] after:text-sm after:absolute md:after:bottom-14 md:after:right-28 lg:after:bottom-24 lg:after:right-44 xl:after:bottom-[70px] xl:after:right-[140px] 2xl:after:right-44  2xl:after:bottom-24  after:py-1 after:px-5 after:rounded-md after:text-white after:border after:bg-primary after:bg-opacity-90 after:opacity-0;
-      &:hover:after {
-        @apply opacity-100 duration-200;
-      }
-    }
-    .add-cart-text {
-      //自行加入商品名稱
-      @apply before:absolute before:text-xl  before:w-full before:bg-opacity-50  before:bg-dark before:h-full  before:text-white before:flex before:justify-center before:items-center before:opacity-0;
-      &:hover:before {
-        @apply opacity-100 duration-500;
-      }
+//  熱銷排行 hover效果
+@media (min-width: 768px) {
+  .add-cart {
+    @apply after:content-['加入購物車'] after:text-sm after:absolute md:after:bottom-14 md:after:right-28 lg:after:bottom-24 lg:after:right-44 xl:after:bottom-[70px] xl:after:right-[140px] 2xl:after:right-44  2xl:after:bottom-24  after:py-1 after:px-5 after:rounded-md after:text-white after:border after:bg-primary after:bg-opacity-90 after:opacity-0;
+    &:hover:after {
+      @apply opacity-100 duration-200;
     }
   }
+  .add-cart-text {
+    //自行加入商品名稱
+    @apply before:absolute before:text-xl  before:w-full before:bg-opacity-50  before:bg-dark before:h-full  before:text-white before:flex before:justify-center before:items-center before:opacity-0;
+    &:hover:before {
+      @apply opacity-100 duration-500;
+    }
+  }
+  .go-product-button {
+    @apply 
+      after:content-['看看拼圖'] after:absolute  after:flex after:justify-center after:top-0  after:bg-dark after:bg-opacity-30 after:text-2xl after:text-white after:items-center after:w-full after:h-full  after:opacity-100 
+      before:opacity-0 before:absolute   before:w-full   before:bg-opacity-50  before:left-0 before:h-full ;
+    &:hover:before , &:hover:after {
+      @apply opacity-100 duration-300;
+    }
+  }
+}
 </style>
