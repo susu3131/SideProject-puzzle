@@ -67,10 +67,10 @@
       </div>
 
       <div class="md:grid grid-cols-3 gap-4 items-center">
-        <div class="text-center mx-auto mb-6 md:mb-0 ">
-          <div class=" relative">
-            <div class="go-product-button hover:origin-le hover:-translate-y-5  hover:rotate-12  duration-300 ">
-              <img src="../assets/image/product/product(8).jpg" class="md:w-[300px] mx-auto " alt="" />
+        <div class="text-center mx-auto mb-6 md:mb-0">
+          <div class="relative">
+            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 hover:drop-shadow-xl after:content-['春眠(もの久保)'] duration-300">
+              <img src="../assets/image/product/product(8).jpg" class="md:w-[300px] mx-auto" alt="" />
             </div>
           </div>
           <p class="mt-2">[ 1000片 ] - 春眠 (もの久保 )</p>
@@ -78,18 +78,25 @@
         </div>
         <div>
           <div class="text-center mx-auto md:mb-5 mb-6">
-            <img src="../assets/image/product/product(9).jpg" class="mx-auto" alt="" />
+            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['相遇(もの久保)'] duration-300">
+              <img src="../assets/image/product/product(9).jpg" class="mx-auto" alt="" />
+            </div>
             <p class="mt-2">[ 1200片 ] - 相遇 (もの久保 )</p>
             <p class="text-pink text-lg">售價: NT $1400</p>
           </div>
           <div class="text-center mx-auto mb-6 md:mb-0">
-            <img src="../assets/image/product/product(7).jpg" class="mx-auto" alt="" />
+            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['凝望(もの久保)'] duration-300">
+              <img src="../assets/image/product/product(7).jpg" class="mx-auto" alt="" />
+            </div>
             <p class="mt-2">[ 1200片 ] - 凝望 (もの久保 )</p>
             <p class="text-pink text-lg mt-1">售價: NT $1400</p>
           </div>
         </div>
         <div class="text-center mx-auto">
-          <img src="../assets/image/product/product(10).jpg" class="md:w-[300px] mx-auto" alt="" />
+          <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['奇幻鹿'] duration-300">
+            <img src="../assets/image/product/product(10).jpg" class="md:w-[300px] mx-auto" alt="" />
+          </div>
+
           <p class="mt-2">[ 1000片 ] - 奇幻鹿</p>
           <p class="text-pink text-lg mt-1">售價: NT $800</p>
         </div>
@@ -235,10 +242,9 @@ export default {
     }
   }
   .go-product-button {
-    @apply 
-      after:content-['看看拼圖'] after:absolute  after:flex after:justify-center after:top-0  after:bg-dark after:bg-opacity-30 after:text-2xl after:text-white after:items-center after:w-full after:h-full  after:opacity-100 
-      before:opacity-0 before:absolute   before:w-full   before:bg-opacity-50  before:left-0 before:h-full ;
-    &:hover:before , &:hover:after {
+    @apply after:text-2xl after:font-black  after:bottom-5 after:absolute after:w-full after:left-1 after:opacity-0;
+    &:hover:before,
+    &:hover:after {
       @apply opacity-100 duration-300;
     }
   }
