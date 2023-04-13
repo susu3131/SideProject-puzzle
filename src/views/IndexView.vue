@@ -38,16 +38,16 @@
         <p class="hidden sm:block pl-24 md:pl-32 lg:pl-0">我們是拼圖趣Puzzle ，很榮幸有這機會為大家服務 <br />本店主要經營販售奇幻風格拼圖，與各大繪師畫家進行合作 <br />想要挑選最優質材質的拼圖嗎 ? 想要蒐集最特別奇幻風格 ? <br />缺片提供補片服務，還享有不定期優惠折扣 ! <br />歡迎大家選購喜愛的拼圖，祝購物愉快 !</p>
       </div>
 
-      <div class="sm:flex justify-center text-xl sm:flex-wrap lg:w-2/3 lg:mx-auto">
-        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+      <div class="sm:flex justify-center text-xl sm:flex-wrap lg:w-3/4 xl:w-2/3 lg:mx-auto">
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22 lg:mb-0">
           <i class="fa-solid fa-puzzle-piece text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>精選優質拼圖</p>
         </div>
-        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22 lg:mb-0">
           <i class="fa-solid fa-dragon text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>奇幻風格拼圖</p>
         </div>
-        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-20 md:mb-22">
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-0 ">
           <i class="fa-solid fa-arrow-right-arrow-left text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>缺片換片服務</p>
         </div>
@@ -60,45 +60,49 @@
     <!-- 新品上市 -->
     <div class="container py-10">
       <div class="flex justify-center items-center">
-        <div class="flex justify-center items-center mb-10 bg-primary text-white px-10 py-2 xl:py-3 xl:px-12">
+        <div class="flex justify-center items-center mb-20 bg-primary text-white px-10 py-2 xl:py-3 xl:px-12 ">
           <i class="fa-solid fa-puzzle-piece text-[28px] mr-3"></i>
           <h2>新品上市</h2>
         </div>
       </div>
 
-      <div class="md:grid grid-cols-3 gap-4 items-center">
+      <div class="md:grid xl:grid-cols-3  gap-4 items-center">
+        <!-- 左 -->
         <div class="text-center mx-auto mb-6 md:mb-0">
           <div class="relative">
-            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 hover:drop-shadow-xl after:content-['春眠(もの久保)'] duration-300">
+            <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:hover:drop-shadow-xl xl:after:content-['春眠(もの久保)'] xl:duration-300">
               <img src="../assets/image/product/product(8).jpg" class="md:w-[300px] mx-auto" alt="" />
             </div>
           </div>
           <p class="mt-2">[ 1000片 ] - 春眠 (もの久保 )</p>
           <p class="text-pink text-lg mt-1">售價: NT $1300</p>
         </div>
-        <div>
-          <div class="text-center mx-auto md:mb-5 mb-6">
-            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['相遇(もの久保)'] duration-300">
-              <img src="../assets/image/product/product(9).jpg" class="mx-auto" alt="" />
+
+        <!-- 中 -->
+        <div class="md:grid md:grid-cols-2 md:gap-6 xl:block md:my-8  xl:my-0">
+          <div class="text-center mx-auto lg:mb-5   xl:pb-8  ">
+            <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:after:text-white xl:hover:drop-shadow-xl xl:after:content-['相遇(もの久保)'] xl:duration-300">
+              <img src="../assets/image/product/product(9).jpg" class="mx-auto h-[200px] lg:h-[250px]" alt="" />
             </div>
             <p class="mt-2">[ 1200片 ] - 相遇 (もの久保 )</p>
-            <p class="text-pink text-lg">售價: NT $1400</p>
+            <p class="text-pink text-lg  ">售價: NT $1400</p>
           </div>
           <div class="text-center mx-auto mb-6 md:mb-0">
-            <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['凝望(もの久保)'] duration-300">
-              <img src="../assets/image/product/product(7).jpg" class="mx-auto" alt="" />
+            <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:after:text-white xl:hover:drop-shadow-xl xl:after:content-['凝望(もの久保)'] xl:duration-300">
+              <img src="../assets/image/product/product(7).jpg" class="mx-auto h-[200px] lg:h-[250px]" alt="" />
             </div>
             <p class="mt-2">[ 1200片 ] - 凝望 (もの久保 )</p>
             <p class="text-pink text-lg mt-1">售價: NT $1400</p>
           </div>
         </div>
+        <!-- 右 -->
         <div class="text-center mx-auto">
-          <div class="go-product-button hover:scale-125 contrast-75 hover:contrast-100 after:text-white hover:drop-shadow-xl after:content-['奇幻鹿'] duration-300">
-            <img src="../assets/image/product/product(10).jpg" class="md:w-[300px] mx-auto" alt="" />
+          <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:after:text-white xl:hover:drop-shadow-xl xl:after:content-['奇幻鹿'] xl:duration-300">
+            <img src="../assets/image/product/product(10).jpg" class="md:w-[300px] xl:w-[300px] mx-auto" alt="" />
           </div>
 
-          <p class="mt-2">[ 1000片 ] - 奇幻鹿</p>
-          <p class="text-pink text-lg mt-1">售價: NT $800</p>
+          <p class="mt-2 xl:mt-6">[ 1000片 ] - 奇幻鹿</p>
+          <p class="text-pink text-lg mt-1 ">售價: NT $800</p>
         </div>
       </div>
     </div>
