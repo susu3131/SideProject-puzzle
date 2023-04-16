@@ -25,6 +25,7 @@
     "vee-validate": "^4.7.4",
     "vue": "^3.2.47",
     "vue-axios": "^3.5.2",
+    "vue-fullpage.js": "^0.2.13",
     "vue-i18n": "^9.2.2",
     "vue-loading-overlay": "^6.0.3",
     "vue-router": "^4.1.6"

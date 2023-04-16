@@ -1,12 +1,37 @@
 <template>
   <div class="py-10">
+    <div class="h-[80vh] flex pb-10">
+      <!-- 直立 -->
+      <div class="flex">
+        <div class="silder flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+          <img src="../assets/image/index/banner1.jpg" class="h-full w-full object-cover" alt="" />
+        </div>
+        <div class="silder flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+          <img src="../assets/image/index/banner2.jpg" class="h-full w-full object-cover" alt="" />
+        </div>
+                <div class="silder flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+          <img src="../assets/image/index/banner3.jpg" class="h-full w-full object-cover" alt="" />
+        </div>
+
+
+        <div class="silder flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+          <img src="../assets/image/index/banner4.jpg" class="h-full w-full object-cover" alt="" />
+        </div>
+                <div class="silder flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+          <img src="../assets/image/index/banner5.jpg" class="h-full w-full object-cover" alt="" />
+        </div>
+      </div>
+      <!-- 橫立 -->
+      <div class="bg-dark w-[800px] h-[700px]"></div>
+    </div>
+
     <!-- banner -->
-    <div class="bg-banner h-[90vh] bg-no-repeat relative">
+    <!-- <div class="bg-banner h-[90vh] bg-no-repeat relative">
       <div class="bg-primary text-center w-[500px] text-5xl py-5 px-10 text-bold text-white opacity-90 absolute top-[65%] right-[22%]">
         <p class="mb-2 opacity-100">屬於你的拼圖世界</p>
         <p>創造拼圖奇幻旅程</p>
       </div>
-    </div>
+    </div> -->
     <!-- new -->
     <div class="bg-pink flex justify-center md:p-4 py-8">
       <div class="container lg:flex justify-center">
@@ -47,7 +72,7 @@
           <i class="fa-solid fa-dragon text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>奇幻風格拼圖</p>
         </div>
-        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-0 ">
+        <div class="text-center sm:w-1/2 lg:w-1/4 mb-14 sm:mb-0">
           <i class="fa-solid fa-arrow-right-arrow-left text-5xl lg:text-4xl sm:mb-2 mb-4 text-pink"></i>
           <p>缺片換片服務</p>
         </div>
@@ -60,13 +85,13 @@
     <!-- 新品上市 -->
     <div class="container py-10">
       <div class="flex justify-center items-center">
-        <div class="flex justify-center items-center mb-20 bg-primary text-white px-10 py-2 xl:py-3 xl:px-12 ">
+        <div class="flex justify-center items-center mb-20 bg-primary text-white px-10 py-2 xl:py-3 xl:px-12">
           <i class="fa-solid fa-puzzle-piece text-[28px] mr-3"></i>
           <h2>新品上市</h2>
         </div>
       </div>
 
-      <div class="md:grid xl:grid-cols-3  gap-4 items-center">
+      <div class="md:grid xl:grid-cols-3 gap-4 items-center">
         <!-- 左 -->
         <div class="text-center mx-auto mb-6 md:mb-0">
           <div class="relative">
@@ -79,13 +104,13 @@
         </div>
 
         <!-- 中 -->
-        <div class="md:grid md:grid-cols-2 md:gap-6 xl:block md:my-8  xl:my-0">
-          <div class="text-center mx-auto lg:mb-5   xl:pb-8  ">
+        <div class="md:grid md:grid-cols-2 md:gap-6 xl:block md:my-8 xl:my-0">
+          <div class="text-center mx-auto lg:mb-5 xl:pb-8">
             <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:after:text-white xl:hover:drop-shadow-xl xl:after:content-['相遇(もの久保)'] xl:duration-300">
               <img src="../assets/image/product/product(9).jpg" class="mx-auto h-[200px] lg:h-[250px]" alt="" />
             </div>
             <p class="mt-2">[ 1200片 ] - 相遇 (もの久保 )</p>
-            <p class="text-pink text-lg  ">售價: NT $1400</p>
+            <p class="text-pink text-lg">售價: NT $1400</p>
           </div>
           <div class="text-center mx-auto mb-6 md:mb-0">
             <div class="go-product-button xl:hover:scale-125 xl:contrast-75 xl:hover:contrast-100 xl:after:text-white xl:hover:drop-shadow-xl xl:after:content-['凝望(もの久保)'] xl:duration-300">
@@ -102,7 +127,7 @@
           </div>
 
           <p class="mt-2 xl:mt-6">[ 1000片 ] - 奇幻鹿</p>
-          <p class="text-pink text-lg mt-1 ">售價: NT $800</p>
+          <p class="text-pink text-lg mt-1">售價: NT $800</p>
         </div>
       </div>
     </div>
@@ -202,7 +227,12 @@ export default {
   data() {
     return {
       newInfo: '各位顧客您好 ， 我們的拼圖店即將開業！我們將於 2023 / 01 / 05 正式開幕，在我們的拼圖店，您可以找到各種各樣的拼圖，從初學者級別到專業級別，並且還有各種主題和類型可供選擇，我們也會有一些獨家和限量版的拼圖，在我們的拼圖店，您可以找到各種各樣的拼圖，還有各種主題和類型可供選擇，我們也會陸續提供一些獨家限量的拼圖，感謝您的關注和支持，我們期待與您相見！',
-      showInfo: ''
+      showInfo: '',
+      options: {
+        licenseKey: 'YOUR_KEY_HEERE',
+        menu: '#menu',
+        sectionsColor: ['#41b883', '#ff5f45', '#0798ec']
+      }
     }
   },
   computed: {

@@ -15,8 +15,12 @@
       <RouterLink to="/puzzlepiece" class="mr-5 text-xl hover:bg-white py-4 px-10 hover:text-primary">拼圖片數</RouterLink>
       <RouterLink to="/onlypuzzle" class="mr-5 text-xl hover:bg-white py-4 px-10 hover:text-primary">獨家/ 限量拼圖</RouterLink>
     </div>
+
+
     <RouterView></RouterView>
   </div>
 </template>
+
+<script></script>
 
 <style></style>

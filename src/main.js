@@ -14,6 +14,10 @@ import AllRules from '@vee-validate/rules';
 import { localize } from '@vee-validate/i18n'
 import zhtw from './zh_tw.json'
 
+import 'vue-fullpage.js/dist/style.css'
+// import './fullpage.scrollHorizontally.min' // Optional. When using fullpage extensions
+import VueFullPage from 'vue-fullpage.js'
+
 configure({
   generateMessage: localize('zhtw'),
   validateOnInput: true // 調整為：輸入文字時，就立即進行驗證
@@ -28,7 +32,7 @@ const app = createApp(App)
 app.use(vueaxios,axios)
 app.use(createPinia())
 app.use(router)
-
+app.use(VueFullPage)
 
 app.mount('#app')
 
