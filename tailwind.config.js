@@ -32,8 +32,10 @@ module.exports = {
       },
       backgroundImage: {
         'puzzle': "url('/src/assets/image/bg.jpg')",
-        'banner': "url('/src/assets/image/index/banner.png')",
         'hover-icon': "url('/src/assets/image/puzzle.png')",
+        'banner-1': "url('/src/assets/image/index/banner6.jpg')",
+        'banner-2': "url('/src/assets/image/index/banner7.jpg')",
+        'banner-3': "url('/src/assets/image/index/banner8.jpg')",
       }
     },
   },

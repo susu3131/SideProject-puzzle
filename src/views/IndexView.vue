@@ -2,33 +2,35 @@
   <div class="py-10">
     <!-- banner -->
     <div class="h-[80vh] flex pb-10 relative">
-      <!-- 直立 -->
+      <!-- test -->
       <div class="flex w-full">
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+        <div class="flex-[0.5] transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner1.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner2.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner3.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner4.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner5.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <!-- 橫立 -->
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] flex flex-col">
-          <div class="flex-1 transition-all duration-1000 hover:flex-[2]">
-            <img src="../assets/image/index/banner6.jpg" class="object-cover" alt="" />
-          </div>
-          <div class="flex-1 transition-all duration-1000 hover:flex-[2]">
-            <img src="../assets/image/index/banner7.jpg" class="object-cover" alt="" />
-          </div>
-          <div class="flex-1 transition-all duration-1000 hover:flex-[2]">
-            <img src="../assets/image/index/banner8.jpg" class="object-cover" alt="" />
+
+        <div class="flex-1 flex bg-red-200 hover:flex-[1.5] h-[700px] transition-all duration-1000">
+          <div class="flex flex-col w-full">
+            <div class="flex-1 bg-red-500 hover:flex-[1.5] bg-banner-1 bg-no-repeat bg-cover w-full h-full transition-all duration-1000">
+              <!-- <img src="../assets/image/index/banner6.jpg" class="object-cover w-full h-full" alt="" /> -->
+            </div>
+            <div class="flex-1 bg-red-600 hover:flex-[1.5] bg-banner-2 bg-no-repeat bg-cover w-full h-full transition-all duration-1000">
+              <!-- <img src="../assets/image/index/banner6.jpg" class="object-cover w-full h-full" alt="" /> -->
+            </div>
+            <div class="flex-1 bg-red-700 hover:flex-[1.5] bg-banner-3 bg-no-repeat bg-cover w-full h-full transition-all duration-1000">
+              <!-- <img src="../assets/image/index/banner6.jpg" class="object-cover w-full h-full" alt="" /> -->
+            </div>
           </div>
         </div>
       </div>
@@ -38,20 +40,7 @@
         <p>創造拼圖奇幻旅程</p>
       </div>
     </div>
-    <!-- test -->
-    <div class="flex w-full">
-      <div class="flex-1 bg-slate-400 h-[500px]">1</div>
-      <div class="flex-1 bg-slate-600 h-[500px]">2</div>
-      <div class="flex-1 bg-slate-700 h-[500px]">3</div>
-      
-      <div class="flex-1 bg-red-200 h-[500px]">
-        <div class="flex flex-col">
-          <div class="f1 bg-red-500 h-">2</div>
-          <div class="f1 bg-red-600">3</div>
-          <div class="f1 bg-red-700">4</div>
-        </div>
-      </div>
-    </div>
+
     <!-- new -->
     <div class="bg-pink flex justify-center md:p-4 py-8">
       <div class="container lg:flex justify-center">
@@ -280,19 +269,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.f2 {
-  flex: 1;
-}
-.f1 {
-  flex: 1;
-}
-.f2:hover {
-  flex: 4;
-}
-
-.f1:hover {
-  flex: 3;
-}
 //  熱銷排行 hover效果
 @media (min-width: 768px) {
   .add-cart {
