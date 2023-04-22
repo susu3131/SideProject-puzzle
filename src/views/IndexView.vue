@@ -2,21 +2,20 @@
   <div class="py-10">
     <!-- banner -->
     <div class="h-[80vh] flex pb-10 relative">
-      <!-- test -->
       <div class="flex w-full">
         <div class="flex-[0.5] transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner1.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[2] mr-1 h-[700px]">
           <img src="../assets/image/index/banner2.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[2] mr-1 h-[700px]">
           <img src="../assets/image/index/banner3.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[2] mr-1 h-[700px]">
           <img src="../assets/image/index/banner4.jpg" class="h-full w-full object-cover" alt="" />
         </div>
-        <div class="flex-1 transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
+        <div class="flex-1 transition-all duration-1000 hover:flex-[2] mr-1 h-[700px]">
           <img src="../assets/image/index/banner5.jpg" class="h-full w-full object-cover" alt="" />
         </div>
 
@@ -56,6 +55,7 @@
         </div>
       </div>
     </div>
+
     <!-- 關於我們 -->
     <div class="container py-10 lg:py-16">
       <div class="flex justify-center relative mb-10 items-center sm:mb-8 md:mb-10 lg:mb-14">
@@ -91,6 +91,7 @@
         </div>
       </div>
     </div>
+
     <!-- 新品上市 -->
     <div class="container py-10">
       <div class="flex justify-center items-center">
@@ -140,6 +141,7 @@
         </div>
       </div>
     </div>
+
     <!-- 熱銷排行 -->
     <div class="container py-10">
       <div class="flex justify-center relative mb-10">
@@ -228,9 +230,6 @@
 </template>
 
 <script>
-// snowStorm.autoStart = false;
-// snowStorm.snowColor = '#ffffff';
-// snowStorm.flakesMaxActive = 300;    // 顯示雪
 
 export default {
   data() {

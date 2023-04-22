@@ -3,7 +3,10 @@
 
 ## Demo
 [SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/#/index)
- 
+login 測試登入
+帳:susu3131@yahoo.com.tw
+密:123456
+
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
 - [UserStory 使用者故事](https://github.com/susu3131/SideProject-puzzle#userstory-%E4%BD%BF%E7%94%A8%E8%80%85%E6%95%85%E4%BA%8B)
@@ -56,17 +59,17 @@
   - [ ] 產品
 
 -  切版
-  - [ ] 首頁
-  - [x] 會員登入  [ ]RWD
+  - [x] 首頁
+  - [x] 會員登入  
   - [ ] 產品頁面
-  - [x] header  [ ]RWD
-  - [x] footer  [ ]RWD
-  - [ ] 後台中心  [ ]RWD
-  - [ ] 會員中心  [ ]RWD
+  - [x] header 
+  - [x] footer  
+  - [x] 後台中心 
+  - [ ] 會員中心  
 
 - 功能開發(前台)
   Modal 
-    - [ ] 開啟/關閉modal
+    - [x] 開啟/關閉modal
 
   收藏拼圖
     - [ ] 收藏列表
@@ -86,7 +89,8 @@
     - [ ] 統計總金額
 
 - 功能開發(後台)
-  - [ ] 管理員登入(modal)
+  - [x] 管理員登入(modal)
+  - [] 後臺驗證登入  
   - [ ] 管理員登出
   - [ ] 顯示訂單
   - [ ] 切換訂單狀態
