@@ -35,7 +35,7 @@
     </div>
 
     <!-- routeview -->
-    <div class="bg-white opacity-80 border-y-2 border-secondary flex-1">
+    <div class="  bg-white bg-opacity-50  border-y-2 border-secondary flex-1">
       <RouterView />
     </div>
     <!-- footer -->

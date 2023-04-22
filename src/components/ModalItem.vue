@@ -61,7 +61,7 @@ export default {
         .then((res) => {
           alert(res.data.message)
           const { token, expired } = res.data
-          document.cookie = `restoken=${token};expires=${new Date(expired)}`
+          document.cookie = `puzzletoken=${token};expires=${new Date(expired)}`
           this.$router.push({ path: '/order' })
         })
         .catch((err) => alert(err.response.data.message))
