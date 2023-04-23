@@ -35,21 +35,67 @@
     </div>
 
     <!-- routeview -->
-    <div class="  bg-white bg-opacity-50  border-y-2 border-secondary flex-1">
+    <div class="bg-white bg-opacity-50 border-y-2 border-secondary flex-1">
       <RouterView />
     </div>
     <!-- footer -->
     <div class="bg-secondary text-center text-white py-4 md:py-6">
       <img src=".././assets/image/logo-white.svg" class="mx-auto" alt="logo" />
-      <p class="text-sm md: ">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
+      <p class="text-sm md:">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
+    </div>
+
+    <!-- 驗證失敗遮擋畫面 -->
+    <div v-if="viewIsHidden" class="h-screen w-screen bg-puzzle blur-md fixed top-0 left-0 z-20"></div>
+    <!-- toast -->
+    <div class="toast toast-end top-0 w-[300px] z-30" v-if="toast.toastType">
+      <div class="alert alert-success text-white">
+        <p class="mx-auto">{{ toast.toastText }}</p>
+      </div>
     </div>
   </div>
 </template>
 
-<script >
-  // snowStorm.autoStart = false
-// snowStorm.snowColor = '#99ccff';
-export default {}
+<script>
+const { VITE_APP_API } = import.meta.env
+export default {
+  data() {
+    return {
+      viewIsHidden: true,
+      toast: {
+        toastText: '',
+        toastType: false
+      }
+    }
+  },
+  methods: {
+    checkLogin() {
+      this.axios
+        .post(`${VITE_APP_API}/api/user/check`)
+        .then(() => {
+          this.viewIsHidden = false
+          this.toast.toastText = '登入成功'
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 2000)
+        })
+        .catch((err) => {
+          this.toast.toastText = err.response.data.message
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+            this.$router.push({ path: '/index' })
+          }, 2500)
+        })
+    }
+  },
+
+  mounted() {
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
+    this.axios.defaults.headers.common['Authorization'] = token
+    this.checkLogin()
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

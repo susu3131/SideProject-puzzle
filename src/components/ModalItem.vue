@@ -59,7 +59,6 @@ export default {
       this.$http
         .post(`${VITE_APP_API}/admin/signin`, this.user)
         .then((res) => {
-          alert(res.data.message)
           const { token, expired } = res.data
           document.cookie = `puzzletoken=${token};expires=${new Date(expired)}`
           this.$router.push({ path: '/order' })

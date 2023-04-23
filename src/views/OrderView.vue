@@ -330,60 +330,12 @@
     </div>
 
 
-    驗證失敗遮擋畫面
-    <div v-if="viewIsHidden" class=" h-screen w-screen   bg-puzzle  blur-md  fixed top-0 left-0 z-20"> </div>
-    <!-- toast -->
-    <div class="toast  toast-end top-0 w-[300px]   z-30" v-if="toast.toastType">
-      <div class="alert alert-success text-white  ">
-        <p  class="mx-auto">{{ toast.toastText }}</p>
-      </div>
-    </div>
+
   </div>
 </template>
 
 <script>
-const { VITE_APP_API } = import.meta.env
-export default {
-  data() {
-    return {
-      viewIsHidden: true,
-      toast: {
-        toastText: '',
-        toastType: false
-      }
-    }
-  },
-  methods: {
-    checkLogin() {
-      this.axios
-        .post(`${VITE_APP_API}/api/user/check`)
-        .then(() => {
-          this.viewIsHidden = false;
-          this.toast.toastText = "登入成功";
-          this.toast.toastType = true;
-          setTimeout(() => {
-            this.toast.toastType = false;
-          }, 2000);
-          })
-        .catch((err) => {
-          this.toast.toastText = err.response.data.message ;
-          this.toast.toastType = true;
-          setTimeout(() => {
-            this.toast.toastType = false;
-            this.$router.push({ path: '/index' })
-          }, 2500);
-          
-        })
 
-    }
-  },
-
-  mounted() {
-    const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
-    this.axios.defaults.headers.common['Authorization'] = token
-    this.checkLogin()
-  }
-}
 </script>
 
 <style lang="scss" scoped>
