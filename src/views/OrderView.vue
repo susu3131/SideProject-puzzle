@@ -318,25 +318,21 @@
     </div>
 
     <!-- 分頁 -->
-    <div class="flex justify-center">
-      <div class="btn-group">
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">«</button>
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black btn-active">1</button>
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">2</button>
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">3</button>
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">4</button>
-        <button class="btn btn-md bg-white active:bg-secondary hover:bg-gray-200 hover:ring-gray-200 text-black">»</button>
+    <div class="flex justify-center mb-5 sm:mb-1">
+      <div class="inline-flex rounded-md duration-150 ">
+        <button type="button" class="inline-block rounded-l  md:px-8  md:py-2 px-3 py-2  text-sm font-medium border  border-success hover:bg-emerald-200  focus:bg-success focus:text-white " >上一頁</button>
+        <button type="button" class="inline-block  md:px-8  md:py-2 px-3 py-2  text-sm font-medium  border border-success hover:bg-emerald-200  focus:bg-success focus:text-white " >1</button>
+        <button type="button" class="inline-block  md:px-8  md:py-2 px-3 py-2  text-sm font-medium  border border-success hover:bg-emerald-200  focus:bg-success focus:text-white " >2</button>
+        <button type="button" class="inline-block  md:px-8  md:py-2 px-3 py-2  text-sm font-medium  border border-success  hover:bg-emerald-200  focus:bg-success focus:text-white" >3</button>
+        <button type="button" class="inline-block  md:px-8  md:py-2 px-3 py-2  text-sm font-medium border border-success hover:bg-emerald-200  focus:bg-success focus:text-white" >4</button>
+        <button type="button" class="inline-block  md:px-8  md:py-2 px-3 py-2  text-sm font-medium  border  border-success hover:bg-emerald-200  focus:bg-success focus:text-white" >5</button>
+        <button type="button" class="inline-block rounded-r  md:px-8  md:py-2 px-3 py-2  text-sm font-medium  border   border-success hover:bg-emerald-200  focus:bg-success focus:text-white" >下一頁</button>
       </div>
     </div>
-
-
-
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 .overflow-ui {
