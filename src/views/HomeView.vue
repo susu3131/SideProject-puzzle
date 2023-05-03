@@ -169,8 +169,7 @@
 <script>
 import ModalItem from '.././components/ModalItem.vue'
 import CartItem from '.././components/CartlItem.vue'
-// snowStorm.autoStart = false
-// snowStorm.snowColor = '#99ccff';
+
 
 export default {
   data() {
