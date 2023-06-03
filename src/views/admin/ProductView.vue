@@ -31,6 +31,7 @@
           <tr class="">
             <th>商品圖片</th>
             <th class="hidden lg:block">商品名稱</th>
+            <th>類別</th>
             <th>上架數量</th>
             <th>原價</th>
             <th>特價</th>
@@ -41,59 +42,65 @@
         <!-- order content -->
         <tbody class="md:flex lg:table-header-group md:flex-wrap">
           <!-- row 1 -->
-          <tr class="flex flex-col border-gray-300 lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b lg:border-black">
+          <tr class="flex flex-col border-gray-300 lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b lg:border-black" v-for="product in products" :key="product.id">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/product(8).jpg" class="w-32 mx-auto lg:w-24 lg:m-0" alt="img" />
+              <img :src="product.imageUrl" class="w-32 mx-auto lg:w-24 lg:m-0" alt="img" />
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">商品名稱</p>
-              <p>[ 1000片 ] - 春眠 (もの久保 )</p>
+              <p>{{ product.title }}</p>
+            </td>
+            <td class="border-b border-gray-300 lg:border-0">
+              <p class="mb-1 font-bold lg:hidden"></p>
+              <p>{{ product.category }}</p>
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">上架數量</p>
-              <select class="max-w-xs select select-accent">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
+              <select class="max-w-xs select select-accent" :value="product.num">
+                <option v-for="num in 10" :key="num.id">{{ num }}</option>
               </select>
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">原價</p>
-              <p>$1400</p>
+              <p>${{ product.origin_price }}</p>
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">特價</p>
-              <p>$1100</p>
+              <p>${{ product.price }}</p>
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <div class="flex">
                 <div class="mr-2 form-control">
                   <label class="cursor-pointer label">
-                    <input type="checkbox" class="bg-white checkbox checkbox-primary" />
+                    <input type="checkbox" class="bg-white checkbox checkbox-primary" :checked="product.is_enabled" />
                   </label>
                 </div>
-                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-primary">已下架</p>
+                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-secondary" v-if="product.is_enabled">上架中</p>
+                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-primary" v-else>已下架</p>
               </div>
             </td>
             <td class="border-b border-black rounded-none lg:border-0 md:border-0">
-              <div class="flex items-center hover:text-secondary">
+              <label for="product-modal" class="flex items-center hover:text-secondary" @click="updateProduct">
                 <i class="mr-3 fa-solid fa-pen-to-square"></i>
                 <p>修改</p>
-              </div>
+              </label>
             </td>
           </tr>
-
         </tbody>
       </table>
     </div>
 
     <!-- 分頁 -->
     <PaginationItemVue></PaginationItemVue>
+
+    <UpdateProduct></UpdateProduct>
   </div>
 </template>
 
 <script>
 import PaginationItemVue from '../../components/PaginationItem.vue'
+import UpdateProduct from '../../components/UpdateProduct.vue'
+
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {
@@ -113,12 +120,18 @@ export default {
           this.page = res.data.pagination
         })
         .catch((err) => console.log(err.response.data.message))
+    },
+    updateProduct() {
+      console.log('修改商品')
     }
   },
   components: {
-    PaginationItemVue
+    PaginationItemVue,
+    UpdateProduct
   },
   mounted() {
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
+    this.axios.defaults.headers.common['Authorization'] = token
     this.getProduct()
   }
 }
