@@ -92,7 +92,7 @@
 
     <!-- 分頁 -->
     <PaginationItemVue></PaginationItemVue>
-
+    <!-- 修改商品modal -->
     <UpdateProduct></UpdateProduct>
   </div>
 </template>
