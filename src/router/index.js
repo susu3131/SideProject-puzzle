@@ -61,16 +61,16 @@ const router = createRouter({
     {
       path: '/admin',
       name: '後臺中心',
-      component: () => import('.././views/AdminView.vue'),
+      component: () => import('../views/admin/AdminView.vue'),
       children: [{
           path: '/order',
           name: '訂單管理',
-          component: () => import('.././views/OrderView.vue'),
+          component: () => import('../views/admin/OrderView.vue'),
         },
         {
-          path: '/puzzle',
+          path: '/PuzzleProduct',
           name: '拼圖管理',
-          component: () => import('.././views/PuzzleView.vue'),
+          component: () => import('../views/admin/ProductView.vue'),
         }
       ]
     },

@@ -9,7 +9,7 @@
       <div class="lg:flex-1"></div>
       <!-- tittle -->
       <div class="flex items-center justify-center px-2 grow sm:mb-0 lg:shrink-0">
-        <img class="lg:w-[100px]" src=".././assets/image/logo.png" alt="logo" width="80" />
+        <img class="lg:w-[100px]" src="../../assets/image/logo.png" alt="logo" width="80" />
         <h1 class="text-2xl font-extrabold lg:text-4xl text-primary">
           拼圖趣 Puzzle
           <span class="block px-3 text-xl text-center border sm:inline sm:text-2xl border-primary">後台中心</span>
@@ -31,7 +31,7 @@
     <!-- content -->
     <div class="flex font-bold text-center sm:p-0">
       <router-link to="/order" class="px-6 py-2 border border-b-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">訂單管理</router-link>
-      <router-link to="/puzzle" class="px-6 py-2 border border-b-0 border-l-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">商品管理</router-link>
+      <router-link to="/PuzzleProduct" class="px-6 py-2 border border-b-0 border-l-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">商品管理</router-link>
     </div>
 
     <!-- routeview -->
@@ -40,25 +40,16 @@
     </div>
     <!-- footer -->
     <div class="py-4 text-center text-white bg-secondary md:py-6">
-      <img src=".././assets/image/logo-white.svg" class="mx-auto" alt="logo" />
+      <img src="../../assets/image/logo-white.svg" class="mx-auto" alt="logo" />
       <p class="text-sm md:">此網站僅做 Side Project 作品使用，無營利用途 / Copyright © 2023 SuPuzzle. All rights reserved.</p>
     </div>
 
     <ToastItem :toast="toast"></ToastItem>
-
-    <!-- 驗證失敗遮擋畫面 -->
-    <!-- <div v-if="viewIsHidden" class="fixed top-0 left-0 z-20 w-screen h-screen bg-puzzle blur-md"></div> -->
-    <!-- toast -->
-    <!-- <div class="toast toast-end top-0 w-[300px] z-30" v-if="toast.toastType">
-      <div class="text-white alert alert-success">
-        <p class="mx-auto">{{ toast.toastText }}</p>
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script>
-import ToastItem from '../components/ToastItem.vue'
+import ToastItem from '../../components/ToastItem.vue'
 const { VITE_APP_API } = import.meta.env
 export default {
   data() {

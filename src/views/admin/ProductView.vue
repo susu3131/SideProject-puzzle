@@ -1,22 +1,22 @@
 <template>
   <div class="p-4 lg:px-20 md:py-10">
     <!-- tittle -->
-    <div class="md:flex items-center mb-4 md:mb-8">
-      <h2 class="text-left text-black mr-10 mb-3 md:mb-0">商品管理</h2>
+    <div class="items-center mb-4 md:flex md:mb-8">
+      <h2 class="mb-3 mr-10 text-left text-black md:mb-0">商品管理</h2>
       <!-- 搜尋欄 -->
-      <div class="bg-white border items-center flex justify-between mb-3 md:mb-0">
+      <div class="flex items-center justify-between mb-3 bg-white border md:mb-0">
         <div class="flex">
           <label for="puzzle-search"></label>
-          <i class="fa-solid fa-magnifying-glass p-2 md:mr-0 flex-none"></i>
+          <i class="flex-none p-2 fa-solid fa-magnifying-glass md:mr-0"></i>
           <input type="search" id="puzzle-search" name="puzzle-search" class="md:p-1 md:pl-2" placeholder="輸入商品名稱.." />
         </div>
-        <button class="py-1 px-4 bg-secondary hover:bg-success hover:text-white flex-none">查詢</button>
+        <button class="flex-none px-4 py-1 bg-secondary hover:bg-success hover:text-white">查詢</button>
       </div>
 
       <!-- 類別篩選 -->
       <div class="flex items-center md:ml-4">
         <label for="puzzletype" class="mr-5">類別</label>
-        <select name="puzzletype" id="puzzletype" class="select select-success select-sm max-w-xs">
+        <select name="puzzletype" id="puzzletype" class="max-w-xs select select-success select-sm">
           <option value="全部商品">全部商品</option>
           <option value="精選系列">精選系列</option>
         </select>
@@ -25,10 +25,10 @@
 
     <!-- table -->
     <div class="overflow-x-auto lg:overflow-y-auto lg:h-[437px] overflow-ui mb-10">
-      <table class="table w-full border table-auto text-black border-black">
+      <table class="table w-full text-black border border-black table-auto">
         <!-- head -->
-        <thead class="p-2 hidden lg:table-header-group lg:border-b lg:border-black">
-          <tr class=" ">
+        <thead class="hidden p-2 lg:table-header-group lg:border-b lg:border-black">
+          <tr class="">
             <th>商品圖片</th>
             <th class="hidden lg:block">商品名稱</th>
             <th>上架數量</th>
@@ -41,43 +41,43 @@
         <!-- order content -->
         <tbody class="md:flex lg:table-header-group md:flex-wrap">
           <!-- row 1 -->
-          <tr class="flex flex-col lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b border-gray-300 lg:border-black">
+          <tr class="flex flex-col border-gray-300 lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b lg:border-black">
             <td class="hidden lg:table-cell lg:border-0">
-              <img src=".././assets/image/product/product(8).jpg" class="lg:w-24 mx-auto lg:m-0 w-32" alt="img" />
+              <img src=".././assets/image/product/product(8).jpg" class="w-32 mx-auto lg:w-24 lg:m-0" alt="img" />
             </td>
-            <td class="border-b lg:border-0 border-gray-300">
-              <p class="lg:hidden font-bold mb-1">商品名稱</p>
+            <td class="border-b border-gray-300 lg:border-0">
+              <p class="mb-1 font-bold lg:hidden">商品名稱</p>
               <p>[ 1000片 ] - 春眠 (もの久保 )</p>
             </td>
-            <td class="border-b lg:border-0 border-gray-300">
-              <p class="lg:hidden font-bold mb-1">上架數量</p>
-              <select class="select select-accent max-w-xs">
+            <td class="border-b border-gray-300 lg:border-0">
+              <p class="mb-1 font-bold lg:hidden">上架數量</p>
+              <select class="max-w-xs select select-accent">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
               </select>
             </td>
-            <td class="border-b lg:border-0 border-gray-300">
-              <p class="lg:hidden font-bold mb-1">原價</p>
+            <td class="border-b border-gray-300 lg:border-0">
+              <p class="mb-1 font-bold lg:hidden">原價</p>
               <p>$1400</p>
             </td>
-            <td class="border-b lg:border-0 border-gray-300">
-              <p class="lg:hidden font-bold mb-1">特價</p>
+            <td class="border-b border-gray-300 lg:border-0">
+              <p class="mb-1 font-bold lg:hidden">特價</p>
               <p>$1100</p>
             </td>
-            <td class="border-b lg:border-0 border-gray-300">
+            <td class="border-b border-gray-300 lg:border-0">
               <div class="flex">
-                <div class="form-control mr-2">
-                  <label class="label cursor-pointer">
-                    <input type="checkbox" class="checkbox checkbox-primary bg-white" />
+                <div class="mr-2 form-control">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" class="bg-white checkbox checkbox-primary" />
                   </label>
                 </div>
-                <p class="border px-4 align-baseline py-2 bg-primary text-white rounded-lg">已下架</p>
+                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-primary">已下架</p>
               </div>
             </td>
-            <td class="border-b lg:border-0 border-black md:border-0 rounded-none">
+            <td class="border-b border-black rounded-none lg:border-0 md:border-0">
               <div class="flex items-center hover:text-secondary">
-                <i class="fa-solid fa-pen-to-square mr-3"></i>
+                <i class="mr-3 fa-solid fa-pen-to-square"></i>
                 <p>修改</p>
               </div>
             </td>
@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import PaginationItemVue from '../components/PaginationItem.vue'
+import PaginationItemVue from '../../components/PaginationItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {

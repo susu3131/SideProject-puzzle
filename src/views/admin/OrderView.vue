@@ -324,7 +324,7 @@
 </template>
 
 <script>
-import PaginationItemVue from '../components/PaginationItem.vue'
+import PaginationItemVue from '../../components/PaginationItem.vue'
 
 
 
