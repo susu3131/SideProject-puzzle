@@ -17,15 +17,26 @@
             <h3 class="text-2xl font-bold text-center">修改商品</h3>
           </div>
           <!-- content -->
-          <div class="px-10 py-5 text-left">
-            <div class="flex mb-2">
-              <div class="mr-2 form-control">
-                <label class="cursor-pointer label">
-                  <input type="checkbox" checked="checked" class="checkbox checkbox-success checkbox-sm" />
-                </label>
+          <div class="relative px-10 py-5 text-left">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex">
+                <div class="mr-2 form-control">
+                  <label class="cursor-pointer label">
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-success checkbox-sm" />
+                  </label>
+                </div>
+                <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-secondary">上架中</p>
+                <!-- <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-primary">已下架</p> -->
               </div>
-              <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-secondary">上架中</p>
-              <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-primary">已下架</p>
+              <button @click="deleteModal = true" class="btn btn-sm btn-outline btn-error"><i class="mr-2 fa-solid fa-xmark"></i>刪除</button>
+              <!-- 刪除確認 -->
+              <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full text-2xl bg-white bg-opacity-80" v-if="deleteModal">
+                <div class="mt-32 text-center">
+                  <p class="mb-5">再次確認是否刪除 ?</p>
+                  <button class="mr-5 text-lg btn btn-error">刪除</button>
+                  <button class="ml-5 text-lg btn btn-outline btn-success" @click="deleteModal = false">取消</button>
+                </div>
+              </div>
             </div>
             <div class="relative flex items-center justify-center group">
               <img src="../assets/image/product/product(7).jpg" class="w-full h-[200px] object-cover" alt="" />
@@ -64,17 +75,17 @@
                 <input type="text" id="product-price" name="product-price" class="w-full max-w-sm input input-bordered input-sm" value="$2800" />
               </div>
 
-              <div class="flex mb-4">
-                <label for="productname" class="w-1/4">商品介紹</label>
+              <div class="flex items-center mb-4">
+                <label for="productname" class="w-1/4">商品描述</label>
                 <textarea class="w-full max-w-xl textarea textarea-bordered textarea-xs" placeholder=""></textarea>
               </div>
 
-              <div class="flex mb-4">
-                <label for="productname" class="w-1/4">商品介紹</label>
+              <div class="flex items-center mb-4">
+                <label for="productname" class="w-1/4">說明</label>
                 <textarea class="w-full max-w-xl textarea textarea-bordered textarea-xs" placeholder=""></textarea>
               </div>
             </div>
-            <button @click.prevent="" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center">修改</button>
+            <button @click.prevent="" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center my-4">修改</button>
           </div>
         </div>
       </div>
@@ -86,7 +97,8 @@
 export default {
   data() {
     return {
-      modal: true
+      modal: true,
+      deleteModal: false
     }
   },
   methods: {

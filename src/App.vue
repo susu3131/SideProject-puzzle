@@ -1,5 +1,5 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 // var sakura = new Sakura('body', {
 //     fallSpeed:0.5,
 //     // minSize: 10,
