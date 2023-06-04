@@ -80,7 +80,7 @@
               </div>
             </td>
             <td class="border-b border-black rounded-none lg:border-0 md:border-0">
-              <label for="product-modal" class="flex items-center hover:text-secondary" @click="updateProduct">
+              <label for="update-product-modal" class="flex items-center hover:text-secondary">
                 <i class="mr-3 fa-solid fa-pen-to-square"></i>
                 <p>修改</p>
               </label>

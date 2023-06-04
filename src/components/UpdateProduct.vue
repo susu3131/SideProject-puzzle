@@ -1,20 +1,19 @@
 <template>
   <div>
-    <input type="checkbox" id="product-modal" class="modal-toggle" />
-    <div class="modal" v-if="modal">
+    <input type="checkbox" id="update-product-modal" class="modal-toggle" />
+    <div class="modal">
       <div class="relative max-w-xl p-0 modal-box opacity-95">
         <div class="text-center bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- 關閉按鈕 -->
-          <button @click="closeModal" type="button" class="absolute top-5 right-2.5 bg-transparent text-white hover:bg-white hover:text-primary rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="authentication-modal">
-            <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
           <!-- tittle -->
           <div class="flex items-center justify-center px-6 py-6 text-white bg-secondary lg:px-8">
             <i class="mr-4 text-3xl fa-solid fa-puzzle-piece"></i>
             <h3 class="text-2xl font-bold text-center">修改商品</h3>
+            <!-- 關閉按鈕 -->
+            <div class="modal-action">
+              <label for="update-product-modal" class="absolute inline-flex items-center px-2 ml-auto text-white bg-transparent rounded-lg top-6 right-5 hover:bg-white hover:text-primary">
+                <i class="text-2xl fa-solid fa-xmark"></i>
+              </label>
+            </div>
           </div>
           <!-- content -->
           <div class="relative px-10 py-5 text-left">
