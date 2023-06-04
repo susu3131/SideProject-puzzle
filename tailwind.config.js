@@ -9,7 +9,7 @@ module.exports = {
     container: {
       center: true,
       // screens: {
-        
+
       // },
       //修改padding 
       padding: {
@@ -43,15 +43,14 @@ module.exports = {
     require("daisyui")
   ],
   daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: '#ffffff',
-          info:'#F56257',
-          'primary-content': '#F56257',
-          'base-100': '#F5F5F5',
-        },
+    themes: [{
+      mytheme: {
+        primary: '#ffffff',
+        primaryorigin: '#F56257',
+        info: '#F56257',
+        'primary-content': '#F56257',
+        'base-100': '#F5F5F5',
       },
-    ],
+    }, ],
   },
 }

@@ -3,9 +3,6 @@
 
 ## Demo
 [SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/#/index)
-login 測試登入
-帳:anny81327@gmail.com
-密:123456
 
 ## Contents 
 - [專題發想/緣由](https://github.com/susu3131/SideProject-puzzle#%E5%B0%88%E9%A1%8C%E7%99%BC%E6%83%B3%E7%B7%A3%E7%94%B1)
@@ -95,8 +92,9 @@ login 測試登入
   - [ ] 顯示訂單
   - [ ] 切換訂單狀態
   - [x] 顯示商品       
-  - [ ] 修改商品      
-  - [ ] 切換商品上/下架狀態
+  - [ ] 修改商品
+  - [ ] 刪除商品        
+  - [x] 切換商品上/下架狀態
 
 - 其它
   - [x] toast 提示訊息

@@ -21,30 +21,39 @@
           <option value="精選系列">精選系列</option>
         </select>
       </div>
+      <!-- 新增商品 -->
+      <button class="flex items-center ml-5 btn btn-success btn-outline btn-sm">
+        <i class="fa-solid fa-plus"></i>
+        <p class="ml-2">新增商品</p>
+      </button>
     </div>
 
     <!-- table -->
     <div class="overflow-x-auto lg:overflow-y-auto lg:h-[437px] overflow-ui mb-10">
       <table class="table w-full text-black border border-black table-auto">
         <!-- head -->
-        <thead class="hidden p-2 lg:table-header-group lg:border-b lg:border-black">
+        <thead class="hidden p-2 text-center lg:table-header-group lg:border-b lg:border-black">
           <tr class="">
             <th>商品圖片</th>
             <th class="hidden lg:block">商品名稱</th>
             <th>類別</th>
             <th>上架數量</th>
             <th>原價</th>
-            <th>特價</th>
+            <th>售價</th>
             <th>商品狀態</th>
             <th>修改商品</th>
           </tr>
         </thead>
         <!-- order content -->
-        <tbody class="md:flex lg:table-header-group md:flex-wrap">
+        <tbody class="text-center md:flex lg:table-header-group md:flex-wrap">
           <!-- row 1 -->
           <tr class="flex flex-col border-gray-300 lg:table-row md:w-1/2 md:border lg:border-0 lg:border-b lg:border-black" v-for="product in products" :key="product.id">
-            <td class="hidden lg:table-cell lg:border-0">
-              <img :src="product.imageUrl" class="w-32 mx-auto lg:w-24 lg:m-0" alt="img" />
+            <td class="hidden text-center lg:table-cell lg:border-0">
+              <img :src="product.imageUrl" class="w-32 mx-auto lg:w-[150px]" alt="img" v-if="product.imageUrl" />
+              <div v-else>
+                <i class="text-3xl text-center text-gray-500 fa-solid fa-image"></i>
+                <p class="block text-xs">No Image</p>
+              </div>
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">商品名稱</p>
@@ -70,17 +79,15 @@
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <div class="flex">
-                <div class="mr-2 form-control">
-                  <label class="cursor-pointer label">
-                    <input type="checkbox" class="bg-white checkbox checkbox-primary" :checked="product.is_enabled" />
-                  </label>
-                </div>
-                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-secondary" v-if="product.is_enabled">上架中</p>
-                <p class="px-4 py-2 text-white align-baseline border rounded-lg bg-primary" v-else>已下架</p>
+                <label class="mr-2 cursor-pointer label" for="is_enabled">
+                  <input id="is_enabled" class="checkbox checkbox-sm" type="checkbox" :true-value="1" :false-value="0" v-model="product.is_enabled" disabled />
+                </label>
+                <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-secondary" v-if="product.is_enabled">上架中</p>
+                <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-primary" v-else>已下架</p>
               </div>
             </td>
             <td class="border-b border-black rounded-none lg:border-0 md:border-0">
-              <label for="update-product-modal" class="flex items-center hover:text-secondary">
+              <label for="update-product-modal" class="flex items-center hover:text-secondary" @click="updateProduct('edit', product)">
                 <i class="mr-3 fa-solid fa-pen-to-square"></i>
                 <p>修改</p>
               </label>
@@ -91,9 +98,10 @@
     </div>
 
     <!-- 分頁 -->
-    <PaginationItemVue></PaginationItemVue>
+    <PaginationItemVue :page="page"></PaginationItemVue>
     <!-- 修改商品modal -->
-    <UpdateProduct></UpdateProduct>
+
+    <UpdateProduct :tempProduct="tempProduct"></UpdateProduct>
   </div>
 </template>
 
@@ -121,13 +129,19 @@ export default {
         })
         .catch((err) => console.log(err.response.data.message))
     },
-    updateProduct() {
-      console.log('修改商品')
+    updateProduct(status, product) {
+      this.tempProduct = product
+      console.log(this.tempProduct)
     }
   },
   components: {
     PaginationItemVue,
     UpdateProduct
+  },
+  watch: {
+    products() {
+      this.getProduct()
+    }
   },
   mounted() {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
