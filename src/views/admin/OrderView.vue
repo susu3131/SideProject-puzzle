@@ -318,16 +318,37 @@
     </div>
 
     <!-- 分頁 -->
-    <PaginationItemVue></PaginationItemVue>
+    <PaginationItemVue :page="page"></PaginationItemVue>
   </div>
 </template>
 
 <script>
 import PaginationItemVue from '../../components/PaginationItem.vue'
+const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {
+  data() {
+    return {
+      page: {}
+    }
+  },
+  methods: {
+    getPage(page = 1) {
+      this.$http
+        .get(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/admin/products?page=${page}`)
+        .then((res) => {
+          this.page = res.data.pagination
+        })
+        .catch((err) => console.log(err.response.data.message))
+    }
+  },
   components: {
     PaginationItemVue
+  },
+  mounted() {
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
+    this.axios.defaults.headers.common['Authorization'] = token
+    this.getPage()
   }
 }
 </script>
