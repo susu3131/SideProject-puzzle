@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="checkbox" id="update-product-modal" class="modal-toggle" />
+    <input type="checkbox" id="update-product-modal" class="modal-toggle" v-model="modal" />
     <div class="modal">
       <div class="relative max-w-xl p-0 modal-box opacity-95">
         <div class="text-center bg-white rounded-lg shadow dark:bg-gray-700">
@@ -108,7 +108,7 @@ export default {
   props: ['tempProduct'],
   data() {
     return {
-      modal: true,
+      modal: false,
       deleteModal: false,
       toast: {
         toastText: '',
