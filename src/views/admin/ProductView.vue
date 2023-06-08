@@ -98,7 +98,7 @@
     </div>
 
     <!-- 分頁 -->
-    <PaginationItemVue :page="page"></PaginationItemVue>
+    <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     <!-- 修改商品modal -->
 
     <UpdateProduct :tempProduct="tempProduct"></UpdateProduct>
@@ -126,6 +126,7 @@ export default {
         .then((res) => {
           this.products = res.data.products
           this.page = res.data.pagination
+          console.log('取得')
         })
         .catch((err) => console.log(err.response.data.message))
     },
@@ -139,9 +140,10 @@ export default {
     UpdateProduct
   },
   watch: {
-    products() {
-      this.getProduct()
-    }
+    // products() {
+    //   console.log('監聽')
+    //   this.getProduct()
+    // }
   },
   mounted() {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
