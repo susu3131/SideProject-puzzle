@@ -65,7 +65,7 @@
             </td>
             <td class="border-b border-gray-300 lg:border-0">
               <p class="mb-1 font-bold lg:hidden">上架數量</p>
-              <select class="max-w-xs select select-accent" :value="product.num">
+              <select disabled class="max-w-xs select select-accent" :value="product.num">
                 <option v-for="num in 10" :key="num.id">{{ num }}</option>
               </select>
             </td>
@@ -100,7 +100,6 @@
     <!-- 分頁 -->
     <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     <!-- 修改商品modal -->
-
     <UpdateProduct :tempProduct="tempProduct"></UpdateProduct>
   </div>
 </template>

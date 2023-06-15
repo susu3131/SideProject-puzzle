@@ -43,9 +43,9 @@
                 <i class="text-3xl text-center text-gray-500 fa-solid fa-image"></i>
                 <p class="block text-xs">No Image</p>
               </div>
-              <label for="imgurl" class="absolute opacity-0 btn btn-sm btn-primary hover:text-black group-hover:opacity-100">更換圖片</label>
+              <label for="imgurl" class="absolute opacity-0 btn btn-sm btn-primary hover:text-black group-hover:opacity-100" @click.prevent="">更換圖片</label>
             </div>
-            <input type="text" id="imgurl" name="imgurl" placeholder="無圖片" v-model="tempProduct.imageUrl" class="w-full my-4 input input-bordered input-sm input-success" />
+            <input type="text"  id="imgurl" name="imgurl" placeholder="無圖片" v-model="tempProduct.imageUrl" class="w-full my-4 input input-bordered input-sm input-success" />
 
             <div class="text-left">
               <!-- 名稱 -->
@@ -57,7 +57,7 @@
               <div class="flex items-center mb-4">
                 <label for="product-type" class="w-1/4">商品類別</label>
                 <select class="w-full max-w-sm select-sm select" id="product-type" name="product-type" v-model="tempProduct.category">
-                  <option value="" selected>未分類</option>
+                  <option value="未分類" selected>未分類</option>
                   <option value="精選拼圖">精選拼圖</option>
                   <option value="新品上市">新品上市</option>
                   <option value="獨家/客製拼圖">獨家/客製拼圖</option>
@@ -69,16 +69,16 @@
               <!-- 數量 -->
               <div class="flex items-center mb-4">
                 <label for="product-num" class="w-1/4">上架數量</label>
-                <select class="w-full max-w-sm select-sm select" id="product-num" name="product-num" v-model="tempProduct.num">
+                <select class="w-full max-w-sm select-sm select" id="product-num" name="product-num" v-model.number="tempProduct.num">
                   <option v-for="num in 11" :key="num">{{ num - 1 }}</option>
                 </select>
               </div>
               <!-- 價格 -->
               <div class="flex items-center mb-4">
                 <label for="product-origin-price" class="w-1/4">原價</label>
-                <input type="text" id="product-origin-price" name="product-origin-price" placeholder="請輸入原價" class="w-full max-w-sm input input-bordered input-sm" v-model="tempProduct.origin_price" />
+                <input type="number" id="product-origin-price" name="product-origin-price" placeholder="請輸入原價" class="w-full max-w-sm input input-bordered input-sm" v-model.number="tempProduct.origin_price" />
                 <label for="product-price" class="w-1/4 ml-2">售價</label>
-                <input type="text" id="product-price" name="product-price" class="w-full max-w-sm input input-bordered input-sm" placeholder="請輸入售價" v-model="tempProduct.price" />
+                <input type="number" id="product-price" name="product-price" class="w-full max-w-sm input input-bordered input-sm" placeholder="請輸入售價" v-model.number="tempProduct.price" />
               </div>
               <!-- 描述 -->
               <div class="flex items-center mb-4">
@@ -86,12 +86,15 @@
                 <textarea class="w-full max-w-xl textarea textarea-bordered textarea-xs" name="product-description" id="product-description" v-model="tempProduct.description" placeholder="請輸入商品描述"></textarea>
               </div>
               <!-- 說明 -->
-              <div class="flex items-center mb-4">
+              <div class="flex items-center mb-2">
                 <label for="product-content" class="w-1/4">說明</label>
                 <textarea class="w-full max-w-xl textarea textarea-bordered textarea-xs" name="product-content" id="product-content" v-model="tempProduct.content" placeholder="請輸入商品說明"></textarea>
               </div>
             </div>
-            <button @click.prevent="" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center my-4">修改</button>
+
+            <button v-if="updateButton" @click.prevent="updateProduct(tempProduct.id)" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center mt-3">修改</button>
+
+            <button v-else type="submit" class="text-red-400 w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center my-4">未正確輸入，請重新輸入</button>
           </div>
         </div>
       </div>
@@ -110,6 +113,8 @@ export default {
     return {
       modal: false,
       deleteModal: false,
+      updateButton: true,
+      updateImg : false,
       toast: {
         toastText: '',
         toastType: false
@@ -137,6 +142,25 @@ export default {
           this.toast.toastType = true
           setTimeout(() => {
             this.toast.toastType = false
+          }, 1200)
+        })
+    },
+    updateProduct(id) {
+      this.$http
+        .put(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/admin/product/${id}`, { data: this.tempProduct })
+        .then(() => {
+          this.modal = false
+          console.log('t')
+          this.toast.toastText = '修改商品成功'
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)
+        })
+        .catch((err) => {
+          this.updateButton = false
+          setTimeout(() => {
+            this.updateButton = true
           }, 1200)
         })
     }
