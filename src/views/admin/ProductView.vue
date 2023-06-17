@@ -128,7 +128,6 @@ export default {
         .then((res) => {
           this.products = res.data.products
           this.page = res.data.pagination
-          console.log('取得')
         })
         .catch((err) => console.log(err.response.data.message))
     },
@@ -141,7 +140,6 @@ export default {
         this.tempProduct = {
           imagesUrl: [],
         }
-        console.log('new')
       }
     }
   },
