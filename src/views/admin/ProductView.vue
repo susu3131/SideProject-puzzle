@@ -28,8 +28,12 @@
       </label>
     </div>
 
+    <div v-if="products">
+      <img src="../../assets/image/load-admin.gif" class="mx-auto" alt="" width="170" />
+    </div>
+
     <!-- table -->
-    <div class="overflow-x-auto lg:overflow-y-auto lg:h-[437px] overflow-ui mb-10">
+    <div v-else class="overflow-x-auto lg:overflow-y-auto lg:h-[437px] overflow-ui mb-10">
       <table class="table w-full text-black border border-black table-auto">
         <!-- head -->
         <thead class="hidden p-2 text-center lg:table-header-group lg:border-b lg:border-black">
@@ -95,10 +99,10 @@
           </tr>
         </tbody>
       </table>
+      <!-- 分頁 -->
+      <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     </div>
 
-    <!-- 分頁 -->
-    <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     <!-- 修改商品modal -->
     <UpdateProduct :tempProduct="tempProduct" :isNew="isNew" :getProduct="getProduct"></UpdateProduct>
   </div>
@@ -128,6 +132,7 @@ export default {
         .then((res) => {
           this.products = res.data.products
           this.page = res.data.pagination
+          console.log('取得產品')
         })
         .catch((err) => console.log(err.response.data.message))
     },

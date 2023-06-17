@@ -30,8 +30,8 @@
 
     <!-- content -->
     <div class="flex font-bold text-center sm:p-0">
-      <router-link to="/order" class="px-6 py-2 border border-b-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">訂單管理</router-link>
-      <router-link to="/PuzzleProduct" class="px-6 py-2 border border-b-0 border-l-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">商品管理</router-link>
+      <router-link exact-active-class="bg-success text-white " to="/order" class="px-6 py-2 border border-b-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">訂單管理</router-link>
+      <router-link exact-active-class="bg-success text-white " to="/PuzzleProduct" class="px-6 py-2 border border-b-0 border-l-0 sm:py-3 sm:px-10 hover:bg-secondary hover:text-white hover:font-black border-secondary">商品管理</router-link>
     </div>
 
     <!-- routeview -->
@@ -109,7 +109,6 @@ export default {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
     this.axios.defaults.headers.common['Authorization'] = token
     this.checkLogin()
-
   }
 }
 </script>
