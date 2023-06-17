@@ -22,10 +22,10 @@
         </select>
       </div>
       <!-- 新增商品 -->
-      <button class="flex items-center ml-5 btn btn-success btn-outline btn-sm">
+      <label for="update-product-modal" class="flex items-center ml-5 btn btn-success btn-outline btn-sm" @click="updateProduct('create')">
         <i class="fa-solid fa-plus"></i>
         <p class="ml-2">新增商品</p>
-      </button>
+      </label>
     </div>
 
     <!-- table -->
@@ -100,7 +100,7 @@
     <!-- 分頁 -->
     <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     <!-- 修改商品modal -->
-    <UpdateProduct :tempProduct="tempProduct"></UpdateProduct>
+    <UpdateProduct :tempProduct="tempProduct" :isNew="isNew"></UpdateProduct>
   </div>
 </template>
 
@@ -114,8 +114,11 @@ export default {
   data() {
     return {
       products: [],
-      tempProduct: {},
-      page: {}
+      tempProduct: {
+        imagesUrl: [],
+      },
+      page: {},
+      isNew: false
     }
   },
   methods: {
@@ -130,8 +133,16 @@ export default {
         .catch((err) => console.log(err.response.data.message))
     },
     updateProduct(status, product) {
-      this.tempProduct = product
-      console.log(this.tempProduct)
+      if (status == 'edit') {
+        this.isNew = false;
+        this.tempProduct = product
+      } else if (status == 'create') {
+        this.isNew = true;
+        this.tempProduct = {
+          imagesUrl: [],
+        }
+        console.log('new')
+      }
     }
   },
   components: {

@@ -7,7 +7,7 @@
           <!-- tittle -->
           <div class="flex items-center justify-center px-6 py-6 text-white bg-secondary lg:px-8">
             <i class="mr-4 text-3xl fa-solid fa-puzzle-piece"></i>
-            <h3 class="text-2xl font-bold text-center">修改商品</h3>
+            <h3 class="text-2xl font-bold text-center"> {{ isNew ? '新增產品':'編輯產品'}}</h3>
             <!-- 關閉按鈕 -->
             <div class="modal-action">
               <label for="update-product-modal" class="absolute inline-flex items-center px-2 ml-auto text-white bg-transparent rounded-lg top-6 right-5 hover:bg-white hover:text-primary">
@@ -26,7 +26,7 @@
                 <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-secondary" v-if="tempProduct.is_enabled">上架中</p>
                 <p class="px-4 py-1 text-white align-baseline border rounded-lg bg-primary" v-else>已下架</p>
               </div>
-              <button @click="deleteModal = true" class="btn btn-sm btn-outline btn-error"><i class="mr-2 fa-solid fa-xmark"></i>刪除</button>
+              <button v-if="isNew == false" @click="deleteModal = true" class="btn btn-sm btn-outline btn-error"><i class="mr-2 fa-solid fa-xmark"></i>刪除</button>
               <!-- 刪除確認 -->
               <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full text-2xl bg-white bg-opacity-80" v-if="deleteModal">
                 <div class="mt-32 text-center">
@@ -92,7 +92,7 @@
               </div>
             </div>
 
-            <button v-if="updateButton" @click.prevent="updateProduct(tempProduct.id)" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center mt-3">修改</button>
+            <button v-if="updateButton" @click.prevent="updateProduct" type="submit" class="w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center mt-3">{{ isNew ? '新增':'修改'}}</button>
 
             <button v-else type="submit" class="text-red-400 w-full px-20 ring-1 ring-secondary hover:bg-secondary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center my-4">未正確輸入，請重新輸入</button>
           </div>
@@ -108,7 +108,7 @@ import ToastItem from '../components/ToastItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {
-  props: ['tempProduct'],
+  props: ['tempProduct','isNew'],
   data() {
     return {
       modal: false,
@@ -122,6 +122,7 @@ export default {
     }
   },
   methods: {
+    // 刪除商品
     deleteProduct(id) {
       this.$http
         .delete(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/admin/product/${id}`)
@@ -145,7 +146,10 @@ export default {
           }, 1200)
         })
     },
+    // 更新、新增商品
     updateProduct(id) {
+
+      
       this.$http
         .put(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/admin/product/${id}`, { data: this.tempProduct })
         .then(() => {
