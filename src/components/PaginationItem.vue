@@ -16,12 +16,11 @@ export default {
   props: ['page', 'getProduct'],
   methods: {
     switchPage(page) {
-      console.log('測試')
       this.getProduct(page)
     }
   },
   mounted() {
-    console.log('頁面測試訊息')
+    // console.log('頁面測試訊息')
   }
 }
 </script>

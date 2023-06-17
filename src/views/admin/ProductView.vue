@@ -100,7 +100,7 @@
     <!-- 分頁 -->
     <PaginationItemVue :page="page" :get-product="getProduct"></PaginationItemVue>
     <!-- 修改商品modal -->
-    <UpdateProduct :tempProduct="tempProduct" :isNew="isNew"></UpdateProduct>
+    <UpdateProduct :tempProduct="tempProduct" :isNew="isNew" :getProduct="getProduct"></UpdateProduct>
   </div>
 </template>
 
@@ -115,7 +115,7 @@ export default {
     return {
       products: [],
       tempProduct: {
-        imagesUrl: [],
+        imagesUrl: []
       },
       page: {},
       isNew: false
@@ -133,12 +133,12 @@ export default {
     },
     updateProduct(status, product) {
       if (status == 'edit') {
-        this.isNew = false;
+        this.isNew = false
         this.tempProduct = product
       } else if (status == 'create') {
-        this.isNew = true;
+        this.isNew = true
         this.tempProduct = {
-          imagesUrl: [],
+          imagesUrl: []
         }
       }
     }
@@ -147,12 +147,7 @@ export default {
     PaginationItemVue,
     UpdateProduct
   },
-  watch: {
-    // products() {
-    //   console.log('監聽')
-    //   this.getProduct()
-    // }
-  },
+
   mounted() {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
     this.axios.defaults.headers.common['Authorization'] = token

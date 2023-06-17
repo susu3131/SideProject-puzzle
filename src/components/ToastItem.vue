@@ -15,7 +15,7 @@
 export default {
   props: ['toast'],
   mounted() {
-    console.log('吐司測試訊息')
+    // console.log('吐司測試訊息')
   }
 }
 </script>

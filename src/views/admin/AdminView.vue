@@ -109,6 +109,7 @@ export default {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)puzzletoken\s*\=\s*([^;]*).*$)|^.*$/, '$1')
     this.axios.defaults.headers.common['Authorization'] = token
     this.checkLogin()
+
   }
 }
 </script>

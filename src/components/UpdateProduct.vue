@@ -110,7 +110,7 @@ import ToastItem from '../components/ToastItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {
-  props: ['tempProduct', 'isNew'],
+  props: ['tempProduct', 'isNew','getProduct'],
   data() {
     return {
       modal: false,
@@ -137,6 +137,7 @@ export default {
           setTimeout(() => {
             this.toast.toastType = false
           }, 1200)
+          this.getProduct()
         })
         .catch((err) => {
           this.deleteModal = false
@@ -160,7 +161,6 @@ export default {
       this.$http[method](url, { data: this.tempProduct })
         .then(() => {
           this.modal = false
-          console.log('成功');
           if(this.isNew == true){
             this.toast.toastText = '建立商品成功'
           }
@@ -171,6 +171,7 @@ export default {
           setTimeout(() => {
             this.toast.toastType = false
           }, 1200)
+          this.getProduct()
         })
         .catch((err) => {
           console.log(err.response.data.message);
