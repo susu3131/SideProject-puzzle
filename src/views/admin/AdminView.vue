@@ -21,7 +21,7 @@
           <i class="fa-solid fa-circle-user"></i>
           <p class="ml-2">管理員 admin</p>
         </div>
-        <button class="flex items-center justify-center border-dark border-[1px] hover:bg-primary hover:text-white px-3 sm:px-6 py-1 h-1/4 rounded-md" @click="signOut">
+        <button class="flex items-center justify-center border-dark border-[1px] hover:border-white hover:bg-primary hover:text-white px-3 sm:px-6 py-1 h-1/4 rounded-md" @click="signOut">
           <p class="hidden mr-1 text-base md:block">登出</p>
           <i class="ml-1 fa-solid fa-right-from-bracket"></i>
         </button>
