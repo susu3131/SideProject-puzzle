@@ -26,10 +26,10 @@
             </div>
             <div>
               <button @click.prevent="login" type="submit" class="w-full px-20 ring-1 ring-primary hover:bg-primary hover:text-white font-medium rounded-lg text-sm py-2.5 text-center">登入</button>
-              <div class="mt-3 text-sm font-medium text-gray-500 dark:text-gray-300">
+              <!-- <div class="mt-3 text-sm font-medium text-gray-500 dark:text-gray-300">
                 我還沒有加入會員 ?
                 <a href="#" class="text-blue-700 hover:underline dark:text-blue-500" onclick="event.preventDefault()">前往註冊</a>
-              </div>
+              </div> -->
             </div>
           </form>
         </div>
