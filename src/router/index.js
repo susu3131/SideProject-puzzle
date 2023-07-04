@@ -46,7 +46,7 @@ const router = createRouter({
             },
             {
               path: '/puzzlepiece',
-              name: '拼圖騙術',
+              name: '拼圖片術',
               component: () => import('../views/product/PuzzlePiece.vue'),
             },
             {

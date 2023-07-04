@@ -13,67 +13,83 @@
     </div>
 
     <!-- product -->
-    <ul class="grid grid-cols-4 gap-6 mt-5">
-      <li class=" text-center">
+    <ul class="grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4  sm:gap-6  mt-5">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
         <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
-      <li class=" text-center">
+      <li class=" text-center mb-5 ">
         <img src="../../assets/image/product/product(1).jpg" alt="" class=" rounded-md">
-        <h3 class="mt-2   text-lg">[ 1200片 ] - 相遇 (もの久保 )</h3>
-        <p class="text-xl text-pink  ">售價 : NT $ 1400 </p>
-        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary ">加入購物車</button>
+        <h3 class="mt-2    md:text-lg xl:text-xl">[ 1200片 ] - 相遇 (もの久保 )</h3>
+        <p class="md:text-xl text-pink  font-medium">售價 : NT $ 1400 </p>
+        <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary  duration-300     hover:scale-110">加入購物車</button>
       </li>
+
+
 
     </ul>
 
+    <!-- <PaginationItemVue :page="page"></PaginationItemVue> -->
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+import PaginationItemVue from '../../components/PaginationItem.vue'
+// import ToastItem from '../components/ToastItem.vue'
+const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
+
+export default {
+  data() {
+    return {
+      toast: {
+        viewIsHidden: false,
+        toastText: '',
+        toastType: false
+      }
+    }
+  },
+  components: {
+    PaginationItemVue,
+    // ToastItem,
+  },
+
+}
 </script>
-
-<style lang="scss" scoped>
-
-</style>

@@ -40,7 +40,7 @@
                   </RouterLink>
                 </li>
                 <li class="border-b">
-                  <RouterLink to="/products">
+                  <RouterLink to="/allpuzzle">
                     <div class="flex items-center justify-center w-full pr-4">
                       <i class="mr-5 fa-solid fa-puzzle-piece"></i>
                       <p>精選商品</p>
