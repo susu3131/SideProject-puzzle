@@ -82,7 +82,7 @@
                   <p>首頁</p>
                 </div>
               </RouterLink>
-              <RouterLink to="/products">
+              <RouterLink to="/allpuzzle">
                 <div class="items-center pl-8 pr-8 border-r border-black lg:flex hover-button">
                   <i class="fa-solid fa-puzzle-piece lg:mr-4"></i>
                   <p>精選商品</p>

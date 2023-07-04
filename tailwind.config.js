@@ -36,6 +36,7 @@ module.exports = {
         'banner-1': "url('/src/assets/image/index/banner6.jpg')",
         'banner-2': "url('/src/assets/image/index/banner7.jpg')",
         'banner-3': "url('/src/assets/image/index/banner8.jpg')",
+        'coupon': "url('/src/assets/image/coupon.png')",
       }
     },
   },

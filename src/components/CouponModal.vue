@@ -2,28 +2,37 @@
   <div>
     <input type="checkbox" id="coupon-modal" class="modal-toggle" v-model="modal" />
     <div class="modal">
-      <div class="relative max-w-lg p-0 modal-box opacity-95">
-        <div class="text-center bg-white rounded-lg shadow dark:bg-gray-700">
+      <div class="relative max-w-xs md:max-w-sm p-0 modal-box">
+        <div class="text-center rounded-lg shadow dark:bg-gray-700 bg-[#DADADA] px-2">
           <!-- tittle -->
-          <div class="flex items-center justify-center px-6 py-6 text-white bg-secondary lg:px-8">
-            <i class="fa-regular fa-clipboard mr-4 text-3xl"></i>
-            <h3 class="text-2xl font-bold text-center">訂單明細</h3>
+          <div class="py-2 lg:px-8">
             <!-- 關閉按鈕 -->
             <div class="modal-action">
-              <label for="order-modal" class="absolute inline-flex items-center px-2 ml-auto text-white bg-transparent rounded-lg top-6 right-5 hover:bg-white hover:text-primary">
-                <i class="text-2xl fa-solid fa-xmark"></i>
+              <label for="coupon-modal" class="absolute inline-flex items-center px-2 ml-auto bg-transparent rounded-lg top-4 right-3">
+                <i class="fa-solid fa-xmark"></i>
               </label>
             </div>
           </div>
 
           <!-- content -->
-          <div class="t">
-
+          <div class="h-[170px] md:h-[200px] bg-no-repeat ">
+            <div class=" relative ">
+              <img src="../assets/image/coupon.png" alt="" class="absolute  top-1 left-0" />
+              <div class="text-white ml-8 mt-4 z-50 absolute left-0 md:left-1 md:top-2">
+                <div class="flex items-center ">
+                  <i class="fa-solid fa-gift mr-2"></i>
+                  <h4>Coupon</h4>
+                </div>
+                <p class="text-5xl md:text-6xl font-semibold ml-14 mt-3 md:mt-4 md:ml-16">80 <span class="text-4xl">%</span></p>
+              </div>
+              <p class="z-50 mr-6 text-xl md:text-2xl font-semibold w-[10px] px-9 py-3 absolute md:right-2 md:top-2  right-0">領取優惠</p>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
-        
+
     <ToastItem :toast="toast"></ToastItem>
   </div>
 </template>
@@ -36,7 +45,7 @@ export default {
   // props: ['tempOrder'],
   data() {
     return {
-      modal: false,
+      modal: true,
       toast: {
         toastText: '',
         toastType: false
@@ -46,6 +55,6 @@ export default {
   methods: {},
   components: {
     ToastItem
-  },
+  }
 }
 </script>
