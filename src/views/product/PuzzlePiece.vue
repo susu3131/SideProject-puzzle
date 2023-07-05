@@ -1,6 +1,7 @@
 <template>
   <div>
     拼圖片數
+  
   </div>
 </template>
 

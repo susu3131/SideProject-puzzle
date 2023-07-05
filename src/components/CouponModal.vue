@@ -45,7 +45,7 @@ export default {
   // props: ['tempOrder'],
   data() {
     return {
-      modal: true,
+      modal: false,
       toast: {
         toastText: '',
         toastType: false
