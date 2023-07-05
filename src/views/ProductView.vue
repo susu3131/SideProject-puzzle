@@ -20,7 +20,7 @@
     <RouterView></RouterView>
 
     <CouponModalVue></CouponModalVue>
-    <ToastItem :toast="toast"></ToastItem>
+    <!-- <ToastItem :toast="toast"></ToastItem> -->
 
   </div>
 </template>
@@ -109,7 +109,7 @@ export default {
     },
   },
   components: {
-    ToastItem,
+    // ToastItem,
     CouponModalVue
   }
 }
