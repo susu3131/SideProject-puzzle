@@ -76,25 +76,25 @@
             </div>
             <!-- pc nav -->
             <nav class="justify-center hidden mt-1 text-lg font-bold text-center sm:flex">
-              <RouterLink to="/index">
+              <RouterLink to="/index"  exact-active-class=" hover-button-active ">
                 <div class="items-center pl-8 pr-8 border-r border-black lg:flex hover:text-primary hover-button">
                   <i class="fa-solid fa-house lg:mr-4"></i>
                   <p>首頁</p>
                 </div>
               </RouterLink>
-              <RouterLink to="/allpuzzle">
+              <RouterLink to="/allpuzzle"  exact-active-class=" hover-button-active ">
                 <div class="items-center pl-8 pr-8 border-r border-black lg:flex hover-button">
                   <i class="fa-solid fa-puzzle-piece lg:mr-4"></i>
                   <p>精選商品</p>
                 </div>
               </RouterLink>
-              <RouterLink to="/customize">
+              <RouterLink to="/customize" exact-active-class=" hover-button-active ">
                 <div class="items-center pl-8 pr-8 border-r border-black lg:flex hover-button">
                   <i class="fa-solid fa-pen-to-square lg:mr-4"></i>
                   <p>訂製拼圖</p>
                 </div>
               </RouterLink>
-              <RouterLink to="/customize">
+              <RouterLink to="/customize" exact-active-class=" hover-button-active " >
                 <div class="items-center pl-8 pr-8 lg:flex hover-button">
                   <i class="fa-solid fa-pen-to-square lg:mr-4"></i>
                   <p>我的收藏</p>
@@ -205,6 +205,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hover-button-active {
+  position: relative;
+  &::before {
+    content: '';
+    @apply bg-primary absolute -bottom-2 h-[2px] w-4/5 left-4  ;
+    transform: scale(1);
+  }
+}
+
+
 // hover 偽元素
 .hover-button {
   position: relative;
