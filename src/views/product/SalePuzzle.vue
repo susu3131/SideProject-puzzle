@@ -1,6 +1,6 @@
 <template>
   <div class="py-10">
-    <div class="flex justify-between px-2">
+    <!-- <div class="flex justify-between px-2">
       <button class="flex items-center text-lg hover:font-semibold hover:scale-110">
         <i class="fa-solid fa-circle-chevron-left mr-4"></i>
         <p>上一頁</p>
@@ -10,7 +10,7 @@
         <p>下一頁</p>
         <i class="fa-solid fa-circle-chevron-right ml-4"></i>
       </button>
-    </div>
+    </div> -->
 
     <!-- product -->
     <div v-if="puzzleProducts == ''">
@@ -27,7 +27,6 @@
         </li>
       </ul>
 
-      <PaginationItemVue :page="page" ></PaginationItemVue>
     </div>
 
     <ToastItem :toast="toast"></ToastItem>
@@ -35,7 +34,6 @@
 </template>
 
 <script>
-import PaginationItemVue from '../../components/PaginationItem.vue'
 import ToastItem from '../../components/ToastItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
@@ -65,7 +63,6 @@ export default {
     }
   },
   components: {
-    PaginationItemVue,
     ToastItem
   },
   mounted() {

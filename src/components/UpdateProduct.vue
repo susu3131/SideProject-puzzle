@@ -60,10 +60,8 @@
                   <option value="未分類" selected>未分類</option>
                   <option value="精選拼圖">精選拼圖</option>
                   <option value="新品上市">新品上市</option>
-                  <option value="獨家/客製拼圖">獨家/客製拼圖</option>
-                  <option value="500片">500片</option>
-                  <option value="1000片">1000片</option>
-                  <option value="2000片以上">2000片以上</option>
+                  <option value="獨家拼圖">獨家拼圖</option>
+                  <option value="一般拼圖">一般拼圖</option>
                 </select>
               </div>
               <!-- 數量/單位 -->
