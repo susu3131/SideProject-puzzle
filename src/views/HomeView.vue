@@ -109,7 +109,7 @@
               <input type="search" name="search" id="" value="搜尋拼圖 ..." class="w-full p-2 text-sm text-gray-400 border rounded-md focus:border-primary focus:border-2 focus-visible:outline-none" />
             </label>
 
-            <label for="cart-modal">
+            <label for="cart-modal" @click="getCart()">
               <i class="p-2 mr-3 fa-solid fa-cart-shopping hover:bg-primary hover:rounded-full hover:text-white"></i>
             </label>
 
@@ -162,12 +162,13 @@
     <!-- 登入modal -->
     <ModalItem></ModalItem>
     <!-- cart modal -->
-    <CartItem></CartItem>
+    <CartItem  :getCart="getCart" :carts="carts"></CartItem>
     <ToastItem :toast="toast" ></ToastItem>
   </div>
 </template>
 
 <script>
+const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 import ModalItem from '.././components/ModalItem.vue'
 import CartItem from '.././components/CartlItem.vue'
 import ToastItem from '../components/ToastItem.vue'
@@ -177,6 +178,7 @@ export default {
     return {
       showSearch: false,
       showNav: false,
+      carts: [],
       toast: {
         viewIsHidden: false,
         toastText: '',
@@ -191,7 +193,16 @@ export default {
       } else {
         this.showSearch = false
       }
-    }
+    },
+    getCart() {
+      this.$http
+        .get(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/cart`)
+        .then((res) => {
+          this.carts = res.data.data
+          console.log(this.carts)
+        })
+        .catch((err) => console.log(err.response.data.message))
+    },
   },
   components: {
     ModalItem,

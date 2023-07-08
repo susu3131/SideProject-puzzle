@@ -1,18 +1,5 @@
 <template>
   <div class="py-10">
-    <!-- 換頁 -->
-    <!-- <div class="flex justify-between px-2">
-      <button class="flex items-center text-lg hover:font-semibold hover:scale-110">
-        <i class="fa-solid fa-circle-chevron-left mr-4"></i>
-        <p>上一頁</p>
-      </button>
-
-      <button class="flex items-center text-lg hover:font-semibold hover:scale-110">
-        <p>下一頁</p>
-        <i class="fa-solid fa-circle-chevron-right ml-4"></i>
-      </button>
-    </div> -->
-
     <!-- product -->
     <div v-if="puzzleProducts == ''">
       <img src="../../assets/image/load.gif" class="mx-auto mt-20" alt="" width="170" />
@@ -56,7 +43,6 @@ export default {
       this.$http
         .get(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/products/all`)
         .then((res) => {
-          console.log(res.data.products)
           this.puzzleProducts = res.data.products
           this.page = res.data.pagination
         })

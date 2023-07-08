@@ -9,11 +9,11 @@
         <p class="">領取本日優惠卷</p>
       </label>
       <div class="flex justify-around md:w-full md:mr-5 text-center lg:pl-5">
-        <RouterLink to="/allpuzzle" exact-active-class="text-primary scale-125 bg-white "  class="border-r sm:border-0 lg:text-xl hover:bg-white lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">全部拼圖</RouterLink>
-        <RouterLink to="/newpuzzle"  exact-active-class="text-primary scale-125 bg-white " class="border-r sm:border-0 lg:text-xl hover:bg-white lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">新品上市</RouterLink>
-        <RouterLink to="/salepuzzle"  exact-active-class="text-primary scale-125 bg-white " class="border-r sm:border-0 lg:text-xl hover:bg-white lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">精選拼圖</RouterLink>
-        <RouterLink to="/puzzlepiece" exact-active-class="text-primary scale-125 bg-white " class="border-r sm:border-0 lg:text-xl hover:bg-white lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">拼圖片數</RouterLink>
-        <RouterLink to="/onlypuzzle"  exact-active-class="text-primary scale-125 bg-white " class="lg:text-xl hover:bg-white xl:hover:scale-125 lg:hover:scale-105 duration-300 md:py-4 px-5 py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">限量拼圖</RouterLink>
+        <RouterLink to="/allpuzzle" exact-active-class="text-primary scale-125 bg-white "  class="border-r  sm:border-0 lg:text-xl hover:bg-gray-100 lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">全部拼圖</RouterLink>
+        <RouterLink to="/newpuzzle"  exact-active-class="text-primary scale-125 bg-white " class="border-r sm:border-0 lg:text-xl hover:bg-gray-100 lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">新品上市</RouterLink>
+        <RouterLink to="/salepuzzle"  exact-active-class="text-primary scale-125 bg-white " class="border-r  sm:border-0 lg:text-xl hover:bg-gray-100 lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">精選拼圖</RouterLink>
+        <RouterLink to="/puzzlepiece" exact-active-class="text-primary scale-125 bg-white " class="border-r sm:border-0 lg:text-xl hover:bg-gray-100 lg:hover:scale-105 xl:hover:scale-125 duration-300 px-5 py-4 md:py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">拼圖片數</RouterLink>
+        <RouterLink to="/onlypuzzle"  exact-active-class="text-primary scale-125 bg-white " class="lg:text-xl  hover:bg-gray-100 xl:hover:scale-125 lg:hover:scale-105 duration-300 md:py-4 px-5 py-4 md:px-6 lg:px-10 lg:py-6 hover:text-primary">限量拼圖</RouterLink>
       </div>
     </div>
 
