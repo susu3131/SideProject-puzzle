@@ -17,9 +17,10 @@
           </div>
           <!-- content -->
           <div class="px-10 ">
-            <ul v-if="carts.carts != ''">
-              <li class="flex items-center justify-between border-b pt-5 pb-5" v-for="cart in carts.carts" :key="cart.id">
-                <img :src="cart.product.imageUrl" class="w-44" alt="" />
+            <ul v-if="carts.carts != ''" class="pt-3 text-right ">
+              <button class="btn  btn-outline  btn-sm  btn-info  text-white   px-12 mt-2"  @click.prevent="cleanCart()">清空購物車</button>
+              <li class="flex items-center justify-between border-b py-4" v-for="cart in carts.carts" :key="cart.id">
+                <img :src="cart.product.imageUrl" class="w-44 h-24 object-cover" alt="" />
                 <p class="text-left">{{ cart.product.title }}</p>
                 <select class="select select-error max-w-[75px]" v-model.number="cart.qty">
                   <option v-for="num in 11" :key="num">{{ num - 1 }}</option>
@@ -27,7 +28,7 @@
                 <p>
                   售價: <span> NT {{ cart.final_total }} </span>
                 </p>
-                <button class="bg-primary py-1 px-2 text-white"><i class="fa-solid fa-xmark" @click.prevent= ""></i></button>
+                <button class="bg-primary py-1 px-2 text-white"><i class="fa-solid fa-xmark" @click.prevent= "delCart(cart.id,cart.product.title)"></i></button>
               </li>
             </ul>
             <div v-else class="mt-3 py-10">未有商品加入購物車</div>
@@ -88,6 +89,35 @@ export default {
     }
   },
   methods: {
+    cleanCart(){
+      this.$http
+        .delete(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/carts`)
+        .then((res) => {
+          this.getCart()
+          this.modal = false
+          this.toast.toastText = '已清空購物車'
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)
+          
+        })
+        .catch((err) => console.log(err))
+    },
+    delCart(id,tittle){
+      this.$http
+      .delete(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/cart/${id}`)
+        .then((res) => {
+          this.modal = false
+          this.toast.toastText = `刪除${tittle}成功`
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)
+          
+        })
+        .catch((err) => console.log(err))
+    },
     orderSubmit() {
       this.$http
         .post(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/order`, {
@@ -102,8 +132,14 @@ export default {
           }
         })
         .then((res) => {
+          this.getCart()
           this.modal = false
-          console.log(res)
+          this.toast.toastText = '訂單結帳成功'
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)
+          
         })
         .catch((err) => console.log(err))
     },

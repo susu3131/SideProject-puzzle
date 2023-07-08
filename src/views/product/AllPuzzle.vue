@@ -6,15 +6,14 @@
     </div>
 
     <div v-else>
-      <ul  class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-6 mt-5 mb-10">
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-6 mt-5 mb-10">
         <li v-for="puzzle in puzzleProducts" :key="puzzle.id" class="text-center mb-5">
           <img :src="puzzle.imageUrl" alt="" class="rounded-md object-cover mx-auto w-[300px] h-[200px]" />
           <h3 class="mt-2 md:text-lg xl:text-xl">{{ puzzle.title }}</h3>
           <p class="md:text-xl text-pink font-medium">售價 : NT $ {{ puzzle.price }} / {{ puzzle.unit }}</p>
-          <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary duration-300 hover:scale-110">加入購物車</button>
+          <button class="px-9 py-1 mt-2 text-white rounded-md bg-primary duration-300 hover:scale-110" @click="addCart(puzzle.id, puzzle.title)">加入購物車</button>
         </li>
       </ul>
-
     </div>
 
     <ToastItem :toast="toast"></ToastItem>
@@ -39,6 +38,23 @@ export default {
     }
   },
   methods: {
+    addCart(id , tittle , qty = 1 ) {
+      this.$http
+        .post(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/cart`, {
+          data: {
+            "product_id":id,
+            qty
+          }
+        })
+        .then((res) => {
+          this.toast.toastText = `加入${tittle}成功`
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)
+        })
+        .catch((err) => console.log(err.response.data.message))
+    },
     getPuzzleProduct(page = 1) {
       this.$http
         .get(`${VITE_APP_API}/api/${VITE_APP_APIPATH}/products/all`)
