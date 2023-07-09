@@ -14,6 +14,8 @@ import AllRules from '@vee-validate/rules';
 import { localize } from '@vee-validate/i18n'
 import zhtw from './zh_tw.json'
 
+import Cookies from 'js-cookie';
+
 // import 'vue-fullpage.js/dist/style.css'
 // // import './fullpage.scrollHorizontally.min' // Optional. When using fullpage extensions
 // import VueFullPage from 'vue-fullpage.js'
@@ -28,6 +30,7 @@ import './assets/main.css'
 import './assets/tailwind.css'
 
 const app = createApp(App)
+
 
 app.use(vueaxios,axios)
 app.use(createPinia())

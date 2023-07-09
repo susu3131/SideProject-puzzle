@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
 import CouponModalVue from '../components/CouponModal.vue'
 import ToastItem from '../components/ToastItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
@@ -33,6 +34,7 @@ const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 export default {
   data() {
     return {
+     
       puzzleProducts:[],
       tempPuzzleProduct :{},
       toast: {
