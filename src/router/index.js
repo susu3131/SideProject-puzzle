@@ -24,6 +24,12 @@ const router = createRouter({
           name: '訂製拼圖',
           component: () => import('.././views/CustomizeView.vue'),
         },
+        {
+          //收藏拼圖
+          path: '/collection',
+          name: '收藏拼圖',
+          component: () => import('.././views/CollectionView.vue'),
+        },
         // 產品頁面
         {
           path: '/products',

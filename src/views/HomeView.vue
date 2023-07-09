@@ -8,7 +8,7 @@
 
           <!-- phone nav -->
           <div class="absolute -ml-4 collapse sm:hidden">
-            <input type="checkbox" />
+            <input type="checkbox" v-model="showNav" />
             <button class="text-5xl font-medium text-left collapse-title sm:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
@@ -16,9 +16,9 @@
               <ul class="w-screen bg-white border-t-2 border-b-2 menu border-primary to-base-100">
                 <li class="border-b">
                   <div class="flex items-center justify-center text-white bg-primary active:bg-opacity-50">
-                    <label for="login-modal" class="flex items-center justify-center w-full">
+                    <label for="login-modal" class="flex items-center justify-center w-full" >
                       <i class="mr-2 fa-solid fa-circle-user"></i>
-                      <p>Login</p>
+                      <p class="">Login</p>
                     </label>
                   </div>
                 </li>
@@ -32,7 +32,7 @@
                 </li>
 
                 <li class="border-b">
-                  <RouterLink to="/index">
+                  <RouterLink to="/index" @click.prevent="showNav = false">
                     <div class="flex items-center justify-center w-full pr-4">
                       <i class="mr-5 fa-solid fa-house"></i>
                       <p>首頁</p>
@@ -40,7 +40,7 @@
                   </RouterLink>
                 </li>
                 <li class="border-b">
-                  <RouterLink to="/allpuzzle">
+                  <RouterLink to="/allpuzzle" @click.prevent="showNav = false">
                     <div class="flex items-center justify-center w-full pr-4">
                       <i class="mr-5 fa-solid fa-puzzle-piece"></i>
                       <p>精選商品</p>
@@ -48,7 +48,7 @@
                   </RouterLink>
                 </li>
                 <li class="border-b">
-                  <RouterLink to="/customize">
+                  <RouterLink to="/customize" @click.prevent="showNav = false">
                     <div class="flex items-center justify-center w-full pr-4">
                       <i class="mr-5 fa-solid fa-pen-to-square"></i>
                       <p>訂製拼圖</p>
@@ -56,7 +56,7 @@
                   </RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/customize">
+                  <RouterLink to="/collection" @click.prevent="showNav = false">
                     <div class="flex items-center justify-center w-full pr-4">
                       <i class="mr-5 fa-solid fa-pen-to-square"></i>
                       <p>我的收藏</p>
@@ -94,7 +94,7 @@
                   <p>訂製拼圖</p>
                 </div>
               </RouterLink>
-              <RouterLink to="/customize" exact-active-class=" hover-button-active " >
+              <RouterLink to="/collection" exact-active-class=" hover-button-active " >
                 <div class="items-center pl-8 pr-8 lg:flex hover-button">
                   <i class="fa-solid fa-pen-to-square lg:mr-4"></i>
                   <p>我的收藏</p>
