@@ -19,12 +19,13 @@
         <p class="text-center mt-2">{{ product.title }}</p>
       </li>
     </ul>
-
+    <ToastItem :toast="toast"></ToastItem>
   </div>
 </template>
 
 <script>
 import Cookies from 'js-cookie'
+import ToastItem from '../components/ToastItem.vue'
 const { VITE_APP_API, VITE_APP_APIPATH } = import.meta.env
 
 export default {
@@ -32,7 +33,12 @@ export default {
     return {
       id: [],
       collectionProducts: [],
-      collectionType: {}
+      collectionType: {},
+      toast: {
+        viewIsHidden: false,
+        toastText: '',
+        toastType: false
+      }
     }
   },
   methods: {
@@ -62,7 +68,15 @@ export default {
     delAllCollection(type, id = 0) {
       if (type == 'all') {
         Cookies.remove('collection')
+        Cookies.remove('collectionType')
         this.collectionProducts = []
+        this.collectionType = []
+
+        this.toast.toastText = `刪除全部收藏`
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)    
       }
     },
     delCollection(newid) {
@@ -76,7 +90,15 @@ export default {
       this.collectionProducts = []
       this.getId()
 
+      this.toast.toastText = `刪除收藏`
+          this.toast.toastType = true
+          setTimeout(() => {
+            this.toast.toastType = false
+          }, 1200)    
     }
+  },  
+  components: {
+    ToastItem
   },
   mounted() {
     this.getId()

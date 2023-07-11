@@ -5,7 +5,7 @@
     
     <!-- toast -->
     <div class="toast toast-end top-0 w-[300px] z-30" v-if="toast.toastType">
-      <div class="text-white alert alert-success">
+      <div class="text-white  alert alert-success">
         <p class="mx-auto">{{ toast.toastText }}</p>
       </div>
     </div>
@@ -16,7 +16,7 @@
 export default {
   props: ['toast'],
   mounted() {
-    console.log('吐司測試訊息')
+    // console.log('吐司測試訊息')
   }
 }
 </script>
