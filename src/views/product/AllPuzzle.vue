@@ -9,9 +9,9 @@
       <ul class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-6 mt-5 mb-10">
         <li v-for="puzzle in puzzleProducts" :key="puzzle.id" class="text-center mb-5">
           <div class="relative">
-            <img :src="puzzle.imageUrl" alt="" class="rounded-md object-cover mx-auto w-[300px] h-[200px]" />
-            <i class="fa-regular text-[28px] fa-bookmark absolute right-5 top-5" @click="addCollection(puzzle.id)"></i>
-            <!-- <i class="fa-solid fa-bookmark  text-[28px]  absolute right-5 top-5 text-primary opacity-95 "></i> -->
+            <img :src="puzzle.imageUrl" alt="" class="rounded-md object-cover mx-auto w-full h-[200px]" />
+            <i v-if="collectionType[puzzle.id] !== true" class="fa-regular text-[28px] fa-bookmark absolute right-4 top-4 text-white" @click="addCollection(puzzle.id, type)"></i>
+            <i v-else class="fa-solid fa-bookmark  text-[28px]  absolute right-4 top-4 text-primary   "  @click="addCollection(puzzle.id, type)"></i>
           </div>
           <h3 class="mt-2 md:text-lg xl:text-xl">{{ puzzle.title }}</h3>
           <p class="md:text-xl text-pink font-medium">售價 : NT $ {{ puzzle.price }} / {{ puzzle.unit }}</p>
@@ -33,6 +33,7 @@ export default {
   data() {
     return {
       collection: [],
+      collectionType: {},
       puzzleProducts: [],
       tempPuzzleProduct: {},
       page: {},
@@ -70,10 +71,20 @@ export default {
         })
         .catch((err) => console.log(err.response.data.message))
     },
-    addCollection(id){
-      this.collection.push(id)
-      console.log(this.collection);
-      Cookies.set('collection', this.collection);
+    addCollection(id, type = false) {
+      if (this.collectionType[id] == true) {
+        this.collectionType[id] = false
+        // 刪除指定id
+        this.collection = this.collection.filter(function (x) {
+          return x !== id
+        })
+        Cookies.set('collection', this.collection,{ expires: 365 })
+      } else {
+        this.collection.push(id)
+        Cookies.set('collection', this.collection,{ expires: 365 })
+        Cookies.set('collectionType', JSON.stringify(this.collectionType),{ expires: 365 })
+        this.collectionType[id] = true
+      }
     }
   },
   components: {
@@ -81,6 +92,14 @@ export default {
   },
   mounted() {
     this.getPuzzleProduct()
+    if (Cookies.get('collection') == undefined) {
+        return
+      }
+    else{
+      this.collectionType = JSON.parse(Cookies.get('collectionType'))
+      this.collection = Cookies.get('collection').split(',')
+    }
+
   }
 }
 </script>
