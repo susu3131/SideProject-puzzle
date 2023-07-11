@@ -1,6 +1,6 @@
 <template>
   <div class="pt-3 bg-contain bg-puzzle md:pt-5">
-    <div class="flex flex-col justify-between">
+    <div class="flex flex-col justify-between    min-h-[97.9vh]">
       <!-- header -->
       <header class="container pt-3">
         <div class="items-center xl:grid xl:grid-cols-12">
