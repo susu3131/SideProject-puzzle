@@ -164,6 +164,8 @@
     <!-- cart modal -->
     <CartItem  :getCart="getCart" :carts="carts"></CartItem>
     <ToastItem :toast="toast" ></ToastItem>
+
+    <h1 class="ml2">Sunny mornings</h1>
   </div>
 </template>
 
@@ -216,6 +218,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 .hover-button-active {
   position: relative;
   &::before {
@@ -253,10 +265,4 @@ export default {
     }
   }
 }
-// .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
-//   --tw-bg-opacity: 0;
-//   background-color: white; /* 更改此處的顏色 */
-//   --tw-text-opacity: 0;
-
-// }
 </style>
