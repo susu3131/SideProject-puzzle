@@ -1,7 +1,7 @@
 <template>
   <div class="py-10">
     <!-- banner -->
-    <div class="h-[80vh] flex pb-10 relative">
+    <div class=" flex pb-10 relative">
       <div class="flex w-full">
         <div class="flex-[0.5] transition-all duration-1000 hover:flex-[3.5] mr-1 h-[700px]">
           <img src="../assets/image/index/banner1.jpg" class="object-cover w-full h-full" alt="" />
