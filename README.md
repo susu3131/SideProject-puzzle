@@ -3,6 +3,13 @@
 ![](https://i.imgur.com/IGBasHH.jpg)
 
 ## Demo
+<<<<<<< HEAD
+=======
+[SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/#/index)
+- login 後臺測試 (可用測試商品測試功能)
+- 帳:anny81327@gmail.com
+- 密:123456
+>>>>>>> c2662cc3098a98d5f50110ee840df8bb366d5171
 
 [SideProject - 拼圖趣 Puzzle Demo](https://susu3131.github.io/SideProject-puzzle/#/index)
 
